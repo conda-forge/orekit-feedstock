@@ -49,7 +49,7 @@ test:
     - test/BackAndForthDetectorTest.py
     - test/KeplerianConverterTest.py
     - test/EventHandlerTest.py
-    - test/AbstractDetectorTest.py
+    - test/TestAbstractDetector.py
     - test/EventDetectorTest.py
     - test/SmallManeuverAnalyticalModelTest.py
     - test/GroundFieldOfViewDetectorTest.py
