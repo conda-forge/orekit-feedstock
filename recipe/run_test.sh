@@ -6,7 +6,7 @@ python ImpulseManeuverTest.py
 python BackAndForthDetectorTest.py
 python KeplerianConverterTest.py
 python EventHandlerTest.py
-python AbstractDetectorTest.py
+python TestAbstractDetector.py
 python EventDetectorTest.py
 python SmallManeuverAnalyticalModelTest.py
 python GroundFieldOfViewDetectorTest.py
