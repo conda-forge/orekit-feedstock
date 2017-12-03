@@ -4,13 +4,13 @@ $PYTHON -m jcc \
 --use_full_names \
 --python orekit \
 --version ${PKG_VERSION} \
---jar $SRC_DIR/orekit-9.0.jar \
---jar $SRC_DIR/hipparchus-core-1.1.jar \
---jar $SRC_DIR/hipparchus-fitting-1.1.jar \
---jar $SRC_DIR/hipparchus-geometry-1.1.jar \
---jar $SRC_DIR/hipparchus-ode-1.1.jar \
---jar $SRC_DIR/hipparchus-optim-1.1.jar \
---jar $SRC_DIR/hipparchus-stat-1.1.jar \
+--jar $SRC_DIR/orekit-9.1.jar \
+--jar $SRC_DIR/hipparchus-core-1.2.jar \
+--jar $SRC_DIR/hipparchus-fitting-1.2.jar \
+--jar $SRC_DIR/hipparchus-geometry-1.2.jar \
+--jar $SRC_DIR/hipparchus-ode-1.2.jar \
+--jar $SRC_DIR/hipparchus-optim-1.2.jar \
+--jar $SRC_DIR/hipparchus-stat-1.2.jar \
 --package java.io \
 --package java.util \
 --package java.text \
