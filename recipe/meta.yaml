@@ -1,7 +1,7 @@
 {% set name = "orekit" %}
-{% set version = "9.0" %}
-{% set filename = "v9_0" %}
-{% set sha256 = "81c2e2ce737d65b0866dc2f1645e18af5125496999f415d1c84ec5e37ee5b0bd" %}
+{% set version = "9.1" %}
+{% set filename = "v9_1" %}
+{% set sha256 = "a9c1a23ecd04a1b3bde852063b59c2cf95eb0d806983f11459ab10986de6fd76" %}
 
 package:
   name: {{ name|lower }}
@@ -49,7 +49,7 @@ test:
     - test/BackAndForthDetectorTest.py
     - test/KeplerianConverterTest.py
     - test/EventHandlerTest.py
-    - test/AbstractDetectorTest.py
+    - test/TestAbstractDetector.py
     - test/EventDetectorTest.py
     - test/SmallManeuverAnalyticalModelTest.py
     - test/GroundFieldOfViewDetectorTest.py
@@ -63,7 +63,7 @@ about:
 
   description:
     Orekit aims at providing accurate and efficient low level components for
-    the development of flight dynamics applications. It is designed to be
+    the development of flight dynamics applications. It is designed to be 
     easily used in very different contexts, from quick studies up to critical operations.
     As a library, Orekit provides basic elements (orbits, dates, attitude, frames, ...) and
     various algorithms to handle them (conversions, propagations, pointing, ....).
