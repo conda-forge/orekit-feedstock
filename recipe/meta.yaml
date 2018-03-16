@@ -29,13 +29,13 @@ requirements:
     - toolchain
     - jcc >=3.1.dev1
     # Force anaconda openjdk
-    - openjdk 8.0.152
+    - openjdk 8.0.121 1
 
   run:
     - python
     - jcc >=3.1.dev1
     # Force anaconda openjdk
-    - openjdk 8.0.152
+    - openjdk 8.0.121 1
 
 test:
   imports:
