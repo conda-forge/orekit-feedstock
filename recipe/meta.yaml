@@ -15,7 +15,7 @@ source:
 build:
   skip: true  # [win32 or linux32]
 
-  number: 0
+  number: 1
 
   rpaths:
     - lib/
@@ -42,17 +42,18 @@ test:
     - orekit
 
   source_files:
-    - test/orekit-data.zip
     - test/AltitudeDetectorTest.py
-    - test/NodeDetectorTest.py
-    - test/ImpulseManeuverTest.py
     - test/BackAndForthDetectorTest.py
-    - test/KeplerianConverterTest.py
-    - test/EventHandlerTest.py
-    - test/TestAbstractDetector.py
     - test/EventDetectorTest.py
-    - test/SmallManeuverAnalyticalModelTest.py
+    - test/EventHandlerTest.py
     - test/GroundFieldOfViewDetectorTest.py
+    - test/ImpulseManeuverTest.py
+    - test/KeplerianConverterTest.py
+    - test/NodeDetectorTest.py
+    - test/orekit-data.zip
+    - test/SmallManeuverAnalyticalModelTest.py
+    - test/TestAbstractDetector.py
+    - test/TLEConverterTest.py
 
 about:
   home: https://www.orekit.org/forge/projects/orekit-python-wrapper
