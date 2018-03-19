@@ -10,4 +10,3 @@ python KeplerianConverterTest.py
 python NodeDetectorTest.py
 python SmallManeuverAnalyticalModelTest.py
 python TestAbstractDetector.py
-python TLEConverterTest.py
