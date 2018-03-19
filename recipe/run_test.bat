@@ -1,11 +1,11 @@
 cd test
 python AltitudeDetectorTest.py
-python NodeDetectorTest.py
-python ImpulseManeuverTest.py
 python BackAndForthDetectorTest.py
-python KeplerianConverterTest.py
-python EventHandlerTest.py
-python TestAbstractDetector.py
 python EventDetectorTest.py
-python SmallManeuverAnalyticalModelTest.py
+python EventHandlerTest.py
 python GroundFieldOfViewDetectorTest.py
+python ImpulseManeuverTest.py
+python KeplerianConverterTest.py
+python NodeDetectorTest.py
+python SmallManeuverAnalyticalModelTest.py
+python TestAbstractDetector.py

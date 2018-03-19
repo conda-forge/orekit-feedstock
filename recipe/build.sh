@@ -40,7 +40,7 @@ java.util.Locale \
 java.util.Map \
 java.util.Set \
 java.util.TreeSet \
---module $SRC_DIR/pyhelpers \
+--module $SRC_DIR/pyhelpers.py \
 --reserved INFINITE \
 --reserved ERROR \
 --reserved OVERFLOW \
