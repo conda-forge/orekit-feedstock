@@ -15,9 +15,9 @@ The Orekit library is written in java. This package provides a python wrapper to
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/orekit-feedstock-forked-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/orekit-feedstock-forked-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/orekit-feedstock-forked-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/orekit-feedstock-forked-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/orekit-feedstock-forked-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/orekit-feedstock-forked-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/orekit-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/orekit-feedstock-forked-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/orekit-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/orekit-feedstock-forked-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/orekit-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/orekit-feedstock-forked-feedstock/branch/master)
 
 Current release info
 ====================
