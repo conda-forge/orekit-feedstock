@@ -1,5 +1,5 @@
 {% set name = "orekit" %}
-{% set version = "9.2" %}
+{% set version = "9_2" %}
 {% set filename = "v9_2" %}
 {% set sha256 = "7a25f7f7482751793ea89624e54e68ffff8cd5de619fcfde61aadedc52784671" %}
 
@@ -15,7 +15,7 @@ source:
 build:
   skip: true  # [win32 or linux32]
 
-  number: 1
+  number: 0
 
   rpaths:
     - lib/
