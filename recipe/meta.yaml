@@ -1,7 +1,7 @@
 {% set name = "orekit" %}
-{% set version = "9.1" %}
-{% set filename = "v9_1" %}
-{% set sha256 = "a9c1a23ecd04a1b3bde852063b59c2cf95eb0d806983f11459ab10986de6fd76" %}
+{% set version = "9.2" %}
+{% set filename = "v9_2" %}
+{% set sha256 = "7a25f7f7482751793ea89624e54e68ffff8cd5de619fcfde61aadedc52784671" %}
 
 package:
   name: {{ name|lower }}
@@ -27,15 +27,15 @@ requirements:
     - python
     - setuptools
     - toolchain
-    - jcc >=3.1.dev1
+    - jcc 3.0
     # Force anaconda openjdk
-    - openjdk 8.0.121 1
+    - openjdk 8.0.152
 
   run:
     - python
-    - jcc >=3.1.dev1
+    - jcc 3.0
     # Force anaconda openjdk
-    - openjdk 8.0.121 1
+    - openjdk 8.0.152
 
 test:
   imports:
