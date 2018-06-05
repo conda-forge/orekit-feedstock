@@ -27,13 +27,13 @@ requirements:
     - python
     - setuptools
     - toolchain
-    - jcc 3.0 2
+    - jcc 3.0
     # Force anaconda openjdk
     - openjdk 8.0.152
 
   run:
     - python
-    - jcc 3.0 2
+    - jcc 3.0
     # Force anaconda openjdk
     - openjdk 8.0.152
 
