@@ -15,14 +15,16 @@ The Orekit library is written in java. This package provides a python wrapper to
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/orekit-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/orekit-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/orekit-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/orekit-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/orekit-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/orekit-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/orekit-feedstock-forked-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/orekit-feedstock-forked-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/orekit-feedstock-forked-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/orekit-feedstock-forked-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/orekit-feedstock-forked-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/orekit-feedstock-forked-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/orekit/badges/version.svg)](https://anaconda.org/conda-forge/orekit)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/orekit/badges/downloads.svg)](https://anaconda.org/conda-forge/orekit)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-orekit-green.svg)](https://anaconda.org/conda-forge/orekit) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/orekit.svg)](https://anaconda.org/conda-forge/orekit) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/orekit.svg)](https://anaconda.org/conda-forge/orekit) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/orekit.svg)](https://anaconda.org/conda-forge/orekit) |
 
 Installing orekit
 =================
