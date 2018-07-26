@@ -15,7 +15,7 @@ source:
 build:
   skip: true  # [win32 or linux32]
 
-  number: 1
+  number: 2
 
   rpaths:
     - lib/
@@ -24,9 +24,10 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
     - setuptools
-    - toolchain
     - jcc 3.0
     # Force anaconda openjdk
     - openjdk 8.0.152
@@ -63,7 +64,7 @@ about:
 
   description:
     Orekit aims at providing accurate and efficient low level components for
-    the development of flight dynamics applications. It is designed to be 
+    the development of flight dynamics applications. It is designed to be
     easily used in very different contexts, from quick studies up to critical operations.
     As a library, Orekit provides basic elements (orbits, dates, attitude, frames, ...) and
     various algorithms to handle them (conversions, propagations, pointing, ....).
