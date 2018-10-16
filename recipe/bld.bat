@@ -51,3 +51,15 @@ java.util.TreeSet ^
 --build ^
 --install
 if errorlevel 1 exit 1
+
+:: ensure that JCC_JDK is set correctly by invoking an activate script
+set ACTIVATE_DIR=%PREFIX%\etc\conda\activate.d
+set DEACTIVATE_DIR=%PREFIX%\etc\conda\deactivate.d
+mkdir %ACTIVATE_DIR%
+mkdir %DEACTIVATE_DIR%
+
+copy %RECIPE_DIR%\scripts\activate.bat %ACTIVATE_DIR%\orekit-activate.bat
+if errorlevel 1 exit 1
+
+copy %RECIPE_DIR%\scripts\deactivate.bat %DEACTIVATE_DIR%\orekit-deactivate.bat
+if errorlevel 1 exit 1

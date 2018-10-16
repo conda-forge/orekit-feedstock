@@ -1,5 +1,5 @@
 {% set name = "orekit" %}
-{% set version = "9_2" %}
+{% set version = "9.2" %}
 {% set filename = "v9_2" %}
 {% set sha256 = "7a25f7f7482751793ea89624e54e68ffff8cd5de619fcfde61aadedc52784671" %}
 
@@ -15,7 +15,7 @@ source:
 build:
   skip: true  # [win32 or linux32]
 
-  number: 2
+  number: 3
 
   rpaths:
     - lib/
@@ -25,6 +25,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
   host:
     - python
     - setuptools
@@ -34,7 +35,7 @@ requirements:
 
   run:
     - python
-    - jcc 3.3.dev2
+    # - jcc 3.3.dev2
     # Force anaconda openjdk
     - openjdk 8.0.152
 
