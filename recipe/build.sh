@@ -52,3 +52,13 @@ java.util.TreeSet \
 --reserved mean \
 --build \
 --install
+
+# ensure that JCC_JDK is set correctly by invoking an activate script
+
+ACTIVATE_DIR=$PREFIX/etc/conda/activate.d
+DEACTIVATE_DIR=$PREFIX/etc/conda/deactivate.d
+mkdir -p $ACTIVATE_DIR
+mkdir -p $DEACTIVATE_DIR
+
+cp $RECIPE_DIR/scripts/activate.sh $ACTIVATE_DIR/orekit-activate.sh
+cp $RECIPE_DIR/scripts/deactivate.sh $DEACTIVATE_DIR/orekit-deactivate.sh

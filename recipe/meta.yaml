@@ -15,7 +15,7 @@ source:
 build:
   skip: true  # [win32 or linux32]
 
-  number: 2
+  number: 3
 
   rpaths:
     - lib/
@@ -25,16 +25,16 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
   host:
     - python
     - setuptools
-    - jcc 3.0
+    - jcc 3.3.dev2
     # Force anaconda openjdk
     - openjdk 8.0.152
 
   run:
     - python
-    - jcc 3.0
     # Force anaconda openjdk
     - openjdk 8.0.152
 
