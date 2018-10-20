@@ -15,7 +15,7 @@ source:
 build:
   skip: true  # [win32 or linux32]
 
-  number: 3
+  number: 1003
 
   rpaths:
     - lib/
