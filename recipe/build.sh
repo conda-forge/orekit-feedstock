@@ -50,6 +50,7 @@ java.util.TreeSet \
 --reserved min \
 --reserved max \
 --reserved mean \
+--files 10 \
 --build \
 --install
 

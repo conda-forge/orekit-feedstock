@@ -48,6 +48,7 @@ java.util.TreeSet ^
 --reserved min ^
 --reserved max ^
 --reserved mean ^
+--files 10 ^
 --build ^
 --install
 if errorlevel 1 exit 1
