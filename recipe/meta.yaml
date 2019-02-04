@@ -14,9 +14,7 @@ source:
   #path: ../../orekit_python_artifacts
 
 build:
-  skip: true  # [win32 or linux32]
-
-  number: 0
+   number: 0
 
   rpaths:
     - lib/
@@ -46,7 +44,7 @@ test:
   source_files:
     - test/*.py
     - test/orekit-data.zip
-    - test/regular-data.zip
+    - test/resources.zip
 
 about:
   home: https://www.orekit.org/forge/projects/orekit-python-wrapper
