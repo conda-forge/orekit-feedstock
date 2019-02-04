@@ -11,10 +11,11 @@ source:
   fn: {{ filename }}.zip
   url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ filename }}.zip
   sha256: {{ sha256 }}
-  #path: ../../orekit_python_artifacts
 
 build:
-   number: 0
+  skip: true  # [win32 or linux32]
+
+  number: 0
 
   rpaths:
     - lib/
