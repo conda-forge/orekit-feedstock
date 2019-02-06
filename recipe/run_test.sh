@@ -1,12 +1,4 @@
 #!/usr/bin/env bash
 cd test
-python AltitudeDetectorTest.py
-python BackAndForthDetectorTest.py
-python EventDetectorTest.py
-python EventHandlerTest.py
-python GroundFieldOfViewDetectorTest.py
-python ImpulseManeuverTest.py
-python KeplerianConverterTest.py
-python NodeDetectorTest.py
-python SmallManeuverAnalyticalModelTest.py
-python TestAbstractDetector.py
+for f in *.py; do python "$f"; done || exit 1
+

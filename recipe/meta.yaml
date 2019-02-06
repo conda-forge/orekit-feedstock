@@ -1,7 +1,7 @@
 {% set name = "orekit" %}
-{% set version = "9_3" %}
-{% set filename = "v9_2" %}
-{% set sha256 = "7a25f7f7482751793ea89624e54e68ffff8cd5de619fcfde61aadedc52784671" %}
+{% set version = "9.3" %}
+{% set filename = "v9_3" %}
+{% set sha256 = "5d221350bc9f7fccefeb6405f87dc424d8cd4fcdd3a379d8170d20978a7593c7" %}
 
 package:
   name: {{ name|lower }}
@@ -29,7 +29,7 @@ requirements:
   host:
     - python
     - setuptools
-    - jcc 3.3
+    - jcc >=3.3
     # Force anaconda openjdk
     - openjdk 8.0.152
 
@@ -43,17 +43,9 @@ test:
     - orekit
 
   source_files:
-    - test/AltitudeDetectorTest.py
-    - test/BackAndForthDetectorTest.py
-    - test/EventDetectorTest.py
-    - test/EventHandlerTest.py
-    - test/GroundFieldOfViewDetectorTest.py
-    - test/ImpulseManeuverTest.py
-    - test/KeplerianConverterTest.py
-    - test/NodeDetectorTest.py
+    - test/*.py
     - test/orekit-data.zip
-    - test/SmallManeuverAnalyticalModelTest.py
-    - test/TestAbstractDetector.py
+    - test/resources.zip
 
 about:
   home: https://www.orekit.org/forge/projects/orekit-python-wrapper
