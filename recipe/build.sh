@@ -29,6 +29,7 @@ java.io.StringWriter \
 java.lang.System \
 java.text.DecimalFormat \
 java.text.DecimalFormatSymbols \
+java.util.ArrayDeque  \
 java.util.ArrayList \
 java.util.Arrays \
 java.util.Collection \
@@ -41,6 +42,13 @@ java.util.Locale \
 java.util.Map \
 java.util.Set \
 java.util.TreeSet \
+java.util.concurrent.Executors \
+java.util.concurrent.TimeUnit \
+java.util.concurrent.ExecutorService \
+java.util.stream.Collectors \
+java.util.stream.Stream \
+java.util.stream.DoubleStream \
+java.util.concurrent.atomic.AtomicReference \
 --module $SRC_DIR/pyhelpers.py \
 --reserved INFINITE \
 --reserved ERROR \
