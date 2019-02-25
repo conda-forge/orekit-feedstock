@@ -1,7 +1,7 @@
 {% set name = "orekit" %}
 {% set version = "9.3" %}
 {% set filename = "v9_3_1" %}
-{% set sha256 = "b5ee9df8bf3e024a261b92ac9c0af1e426f11b41b72436329b4645f83aab0b7b" %}
+{% set sha256 = "5e82e69a536230b765b1c664acedd619bbc2dd42f2ba1b236ca9591c0cead235" %}
 
 package:
   name: {{ name|lower }}
@@ -64,4 +64,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - petrushy 
+    - petrushy
