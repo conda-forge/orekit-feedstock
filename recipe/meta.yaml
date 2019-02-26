@@ -1,7 +1,7 @@
 {% set name = "orekit" %}
 {% set version = "9.3" %}
 {% set filename = "v9_3_2" %}
-{% set sha256 = "74068da65936a7dec4ecd842b58219b663508e96f4d57101937381c8064abb34" %}
+{% set sha256 = "" %}
 
 package:
   name: {{ name|lower }}
