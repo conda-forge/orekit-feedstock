@@ -2,11 +2,11 @@
 cd test
 
 for f in *.py; do
-    if [ python "$f" -ne 0 ]; then
+    if python "$f"; then
+        echo "Test reported ok"
+    else
         echo "Trying to Fail!"
         exit 1
-    else
-        echo "Test reported ok"
     fi
 done
 exit 0
