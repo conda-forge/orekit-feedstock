@@ -10,7 +10,7 @@
 --use_full_names ^
 --python orekit ^
 --version %PKG_VERSION% ^
---jar %SRC_DIR%\orekit-9.3.jar ^
+--jar %SRC_DIR%\orekit-9.3.1.jar ^
 --jar %SRC_DIR%\hipparchus-core-1.4.jar ^
 --jar %SRC_DIR%\hipparchus-filtering-1.4.jar ^
 --jar %SRC_DIR%\hipparchus-fitting-1.4.jar ^
@@ -64,6 +64,7 @@ java.util.concurrent.atomic.AtomicReference ^
 --reserved min ^
 --reserved max ^
 --reserved mean ^
+--reserved SNAN ^
 --files 10 ^
 --build ^
 --install
