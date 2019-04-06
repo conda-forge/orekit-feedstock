@@ -1,7 +1,7 @@
 {% set name = "orekit" %}
 {% set version = "9.3.1" %}
-{% set filename = "v9_3_1_1" %}
-{% set sha256 = "72e747524267dec11a21292f3b6796bc59cbc8cd111e8ccb9a3235f4b0f5c1bb" %}
+{% set filename = "v9_3_1_2" %}
+{% set sha256 = "597a483125ce5042beb3d2ae391029831a93f764c31b42422d038424998ccb4e" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
 
   rpaths:
     - lib/
@@ -27,7 +27,7 @@ requirements:
   host:
     - python
     - setuptools
-    - jcc =3.3
+    - jcc >= 3.3
     # Force anaconda openjdk
     - openjdk 8.0.152
 
