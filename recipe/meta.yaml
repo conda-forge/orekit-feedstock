@@ -27,7 +27,7 @@ requirements:
   host:
     - python
     - setuptools
-    - jcc >= 3.3
+    - jcc >=3.3
     # Force anaconda openjdk
     - openjdk 8.0.152
 
