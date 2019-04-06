@@ -16,6 +16,7 @@ $PYTHON -m jcc \
 --package java.util \
 --package java.text \
 --package org.orekit \
+--package org.hipparchus \
 java.io.BufferedReader \
 java.io.FileInputStream \
 java.io.FileOutputStream \
@@ -59,7 +60,7 @@ java.util.concurrent.atomic.AtomicReference \
 --reserved max \
 --reserved mean \
 --reserved SNAN \
---files 10 \
+--files 500 \
 --build \
 --install
 
