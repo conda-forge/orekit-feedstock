@@ -22,7 +22,6 @@
 --package java.util ^
 --package java.text ^
 --package org.orekit ^
---package org.hipparchus ^
 java.io.BufferedReader ^
 java.io.FileInputStream ^
 java.io.FileOutputStream ^
@@ -49,13 +48,9 @@ java.util.Locale ^
 java.util.Map ^
 java.util.Set ^
 java.util.TreeSet ^
-java.util.concurrent.Executors ^
-java.util.concurrent.TimeUnit ^
-java.util.concurrent.ExecutorService ^
 java.util.stream.Collectors ^
 java.util.stream.Stream ^
 java.util.stream.DoubleStream ^
-java.util.concurrent.atomic.AtomicReference ^
 --module %SRC_DIR%\pyhelpers.py ^
 --reserved INFINITE ^
 --reserved ERROR ^
