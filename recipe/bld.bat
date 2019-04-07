@@ -66,7 +66,7 @@ java.util.concurrent.atomic.AtomicReference ^
 --reserved max ^
 --reserved mean ^
 --reserved SNAN ^
---files 500 ^
+--files 80 ^
 --build ^
 --install
 if errorlevel 1 exit 1
