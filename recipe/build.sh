@@ -16,6 +16,7 @@ $PYTHON -m jcc \
 --package java.util \
 --package java.text \
 --package org.orekit \
+--exclude org.hipparchus.geometry.partitioning.Transform \
 java.io.BufferedReader \
 java.io.FileInputStream \
 java.io.FileOutputStream \
