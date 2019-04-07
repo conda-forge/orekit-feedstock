@@ -9,5 +9,5 @@ for %%f in (*.py) do (
     )
 )
 
-if %error% 1 exit /B 1
-exit /B 0
+if %error% NEQ 0 exit /B 1
+
