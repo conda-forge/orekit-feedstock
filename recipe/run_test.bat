@@ -10,3 +10,4 @@ for %%f in (*.py) do (
 )
 
 if %error% 1 exit 1
+exit 0
