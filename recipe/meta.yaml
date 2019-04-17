@@ -28,7 +28,7 @@ requirements:
     - python
     - setuptools
     - jcc >=3.5
-    # Force anaconda openjdk
+    # Force anaconda openjdk 
     - openjdk 8.0.152
 
   run:
