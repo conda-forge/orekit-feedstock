@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 cd test
 
+ERROR=0
+
 for f in *.py; do
     if python "$f"; then
         echo "Test reported ok"
     else
-        echo "Trying to Fail!"
-        exit 1
+        echo "Test failed"
+        ERROR=1
     fi
 done
-exit 0
+exit $ERROR

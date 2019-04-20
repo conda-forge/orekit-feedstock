@@ -22,6 +22,7 @@
 --package java.util ^
 --package java.text ^
 --package org.orekit ^
+--exclude org.hipparchus.geometry.partitioning.Transform ^
 java.io.BufferedReader ^
 java.io.FileInputStream ^
 java.io.FileOutputStream ^
@@ -48,13 +49,9 @@ java.util.Locale ^
 java.util.Map ^
 java.util.Set ^
 java.util.TreeSet ^
-java.util.concurrent.Executors ^
-java.util.concurrent.TimeUnit ^
-java.util.concurrent.ExecutorService ^
 java.util.stream.Collectors ^
 java.util.stream.Stream ^
 java.util.stream.DoubleStream ^
-java.util.concurrent.atomic.AtomicReference ^
 --module %SRC_DIR%\pyhelpers.py ^
 --reserved INFINITE ^
 --reserved ERROR ^
@@ -65,7 +62,7 @@ java.util.concurrent.atomic.AtomicReference ^
 --reserved max ^
 --reserved mean ^
 --reserved SNAN ^
---files 10 ^
+--files 81 ^
 --build ^
 --install
 if errorlevel 1 exit 1
