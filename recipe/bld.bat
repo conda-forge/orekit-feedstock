@@ -10,19 +10,18 @@
 --use_full_names ^
 --python orekit ^
 --version %PKG_VERSION% ^
---jar %SRC_DIR%\orekit-9.3.1.jar ^
---jar %SRC_DIR%\hipparchus-core-1.4.jar ^
---jar %SRC_DIR%\hipparchus-filtering-1.4.jar ^
---jar %SRC_DIR%\hipparchus-fitting-1.4.jar ^
---jar %SRC_DIR%\hipparchus-geometry-1.4.jar ^
---jar %SRC_DIR%\hipparchus-ode-1.4.jar ^
---jar %SRC_DIR%\hipparchus-optim-1.4.jar ^
---jar %SRC_DIR%\hipparchus-stat-1.4.jar ^
+--jar %SRC_DIR%\orekit-10.0.jar ^
+--jar %SRC_DIR%\hipparchus-core-1.5.jar ^
+--jar %SRC_DIR%\hipparchus-filtering-1.5.jar ^
+--jar %SRC_DIR%\hipparchus-fitting-1.5.jar ^
+--jar %SRC_DIR%\hipparchus-geometry-1.5.jar ^
+--jar %SRC_DIR%\hipparchus-ode-1.5.jar ^
+--jar %SRC_DIR%\hipparchus-optim-1.5.jar ^
+--jar %SRC_DIR%\hipparchus-stat-1.5.jar ^
 --package java.io ^
 --package java.util ^
 --package java.text ^
 --package org.orekit ^
---exclude org.hipparchus.geometry.partitioning.Transform ^
 java.io.BufferedReader ^
 java.io.FileInputStream ^
 java.io.FileOutputStream ^
