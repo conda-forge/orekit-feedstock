@@ -12,11 +12,12 @@ $PYTHON -m jcc \
 --jar $SRC_DIR/hipparchus-ode-1.5.jar \
 --jar $SRC_DIR/hipparchus-optim-1.5.jar \
 --jar $SRC_DIR/hipparchus-stat-1.5.jar \
+--jar $SRC_DIR/rugged-2.1.jar \
 --package java.io \
 --package java.util \
 --package java.text \
 --package org.orekit \
---exclude org.hipparchus.geometry.partitioning.Transform \
+--package org.orekit.rugged \
 java.io.BufferedReader \
 java.io.FileInputStream \
 java.io.FileOutputStream \
