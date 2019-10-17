@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 5
+  number: 6
 
   rpaths:
     - lib/
@@ -60,6 +60,7 @@ about:
     various algorithms to handle them (conversions, propagations, pointing, ....).
 
     The Orekit library is written in java. This package provides a python wrapper to that library.
+
   doc_url: https://www.orekit.org/static/apidocs/
 
 extra:
