@@ -57,6 +57,7 @@ java.util.stream.DoubleStream \
 --reserved max \
 --reserved mean \
 --reserved SNAN \
+--classpath $PREFIX/lib/tools.jar \
 --files 81 \
 --build \
 --install
