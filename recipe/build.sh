@@ -4,14 +4,14 @@ $PYTHON -m jcc \
 --use_full_names \
 --python orekit \
 --version ${PKG_VERSION} \
---jar $SRC_DIR/orekit-10.0.jar \
---jar $SRC_DIR/hipparchus-core-1.5.jar \
---jar $SRC_DIR/hipparchus-filtering-1.5.jar \
---jar $SRC_DIR/hipparchus-fitting-1.5.jar \
---jar $SRC_DIR/hipparchus-geometry-1.5.jar \
---jar $SRC_DIR/hipparchus-ode-1.5.jar \
---jar $SRC_DIR/hipparchus-optim-1.5.jar \
---jar $SRC_DIR/hipparchus-stat-1.5.jar \
+--jar $SRC_DIR/orekit-10.1.jar \
+--jar $SRC_DIR/hipparchus-core-1.6.jar \
+--jar $SRC_DIR/hipparchus-filtering-1.6.jar \
+--jar $SRC_DIR/hipparchus-fitting-1.6.jar \
+--jar $SRC_DIR/hipparchus-geometry-1.6.jar \
+--jar $SRC_DIR/hipparchus-ode-1.6.jar \
+--jar $SRC_DIR/hipparchus-optim-1.6.jar \
+--jar $SRC_DIR/hipparchus-stat-1.6.jar \
 --jar $SRC_DIR/rugged-2.1.jar \
 --package java.io \
 --package java.util \
@@ -57,6 +57,7 @@ java.util.stream.DoubleStream \
 --reserved max \
 --reserved mean \
 --reserved SNAN \
+--classpath $PREFIX/lib/tools.jar \
 --files 81 \
 --build \
 --install
