@@ -1,6 +1,6 @@
 {% set name = "orekit" %}
 {% set version = "10.2" %}
-{% set artifact_filename = "v10_1_5" %}
+{% set artifact_filename = "v10_2_0" %}
 {% set sha256 = "350781883ced170a2d2d7b4a5d91f8af4010aa942347eb7ff59aad48570aa780" %}  # [not osx]
 {% set sha256 = "66ebabc895773dff2293e011547a626c9652ffeb74023fc900f3875b55f95de2" %}  # [osx]
 
@@ -15,7 +15,7 @@ source:
 
   #url: https://github.com/petrushy/orekit_python_artifacts/archive/version-10.2.zip
   #fn: version-10.2.zip
-  
+
   #fn: {{ artifact_filename }}.zip  # [not osx]
   #url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.zip  # [not osx]
   #fn: {{ artifact_filename }}.tar.gz  # [osx]
@@ -34,7 +34,6 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    
   host:
     - python
     - setuptools
