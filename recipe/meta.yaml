@@ -55,6 +55,7 @@ test:
     - test/*.py
     - test/orekit-data.zip
     - test/resources.zip
+    - test/resources/ccsds/*.txt
 
 about:
   home: https://www.orekit.org/forge/projects/orekit-python-wrapper
