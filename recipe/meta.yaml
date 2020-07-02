@@ -1,8 +1,8 @@
 {% set name = "orekit" %}
 {% set version = "10.2" %}
-{% set artifact_filename = "v10_2_0" %}
-{% set sha256 = "350781883ced170a2d2d7b4a5d91f8af4010aa942347eb7ff59aad48570aa780" %}  # [not osx]
-{% set sha256 = "66ebabc895773dff2293e011547a626c9652ffeb74023fc900f3875b55f95de2" %}  # [osx]
+{% set artifact_filename = "v10_2_1" %}
+{% set sha256 = "A569A538959DA89B277478F3F727E055A87730B37F6312062233CFAF33BB0900" %}  # [not osx]
+{% set sha256 = "84C2F8475358F8112F9ABF4182BD5CD796E9003796B3D53477EB68F49085DD0B" %}  # [osx]
 
 
 package:
@@ -11,19 +11,17 @@ package:
 
 source:
 
-  path: ../../orekit_python_artifacts
+  #path: ../../orekit_python_artifacts
 
-  #url: https://github.com/petrushy/orekit_python_artifacts/archive/version-10.2.zip
-  #fn: version-10.2.zip
+  fn: {{ artifact_filename }}.zip  # [not osx]
+  url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.zip  # [not osx]
 
-  #fn: {{ artifact_filename }}.zip  # [not osx]
-  #url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.zip  # [not osx]
-  #fn: {{ artifact_filename }}.tar.gz  # [osx]
-  #url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.tar.gz  # [osx]
-  #sha256: {{ sha256 }}
+  fn: {{ artifact_filename }}.tar.gz  # [osx]
+  url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.tar.gz  # [osx]
+  sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
 
   rpaths:
     - lib/
