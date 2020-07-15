@@ -10,14 +10,14 @@
 --use_full_names ^
 --python orekit ^
 --version %PKG_VERSION% ^
---jar %SRC_DIR%\orekit-10.1.jar ^
---jar %SRC_DIR%\hipparchus-core-1.6.jar ^
---jar %SRC_DIR%\hipparchus-filtering-1.6.jar ^
---jar %SRC_DIR%\hipparchus-fitting-1.6.jar ^
---jar %SRC_DIR%\hipparchus-geometry-1.6.jar ^
---jar %SRC_DIR%\hipparchus-ode-1.6.jar ^
---jar %SRC_DIR%\hipparchus-optim-1.6.jar ^
---jar %SRC_DIR%\hipparchus-stat-1.6.jar ^
+--jar %SRC_DIR%\orekit-10.2.jar ^
+--jar %SRC_DIR%\hipparchus-core-1.7.jar ^
+--jar %SRC_DIR%\hipparchus-filtering-1.7.jar ^
+--jar %SRC_DIR%\hipparchus-fitting-1.7.jar ^
+--jar %SRC_DIR%\hipparchus-geometry-1.7.jar ^
+--jar %SRC_DIR%\hipparchus-ode-1.7.jar ^
+--jar %SRC_DIR%\hipparchus-optim-1.7.jar ^
+--jar %SRC_DIR%\hipparchus-stat-1.7.jar ^
 --jar %SRC_DIR%\rugged-2.1.jar ^
 --package java.io ^
 --package java.util ^
