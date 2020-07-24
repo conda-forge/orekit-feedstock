@@ -1,8 +1,8 @@
 {% set name = "orekit" %}
 {% set version = "10.2" %}
-{% set artifact_filename = "v10_2_3" %}
-{% set sha256 = "9addc0e6e397b49ad829dcd39967a9dcf023a8c5c58cd3b5904157af97495aa9" %}  # [not osx]  zip file
-{% set sha256 = "d33a63c135df343c4dbf9b5f268d322355b3a2d9b1819bd317c58a7cbfb5c203" %}  # [osx]  tar.gz file
+{% set artifact_filename = "v10_2_4" %}
+{% set sha256 = "2fa84da7e74e69f2596cffa11173b5477dc199cf13791930beb9d8e4ab85b63c" %}  # [not osx]  zip file
+{% set sha256 = "38336ec7417d969f8eec42c2401b32e7d54c7a0a075b31afdd00bfbf580a5cde" %}  # [osx]  tar.gz file
 
 
 package:
@@ -10,9 +10,6 @@ package:
   version: {{ version }}
 
 source:
-
-  #path: ../../orekit_python_artifacts
-
   fn: {{ artifact_filename }}.zip  # [not osx]
   url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.zip  # [not osx]
 
@@ -21,7 +18,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
 
   rpaths:
     - lib/
@@ -35,7 +32,8 @@ requirements:
   host:
     - python
     - setuptools
-    - jcc =3.6  # Need to solve why later versions not working properly
+    - jcc =3.6  # Need to solve why later versions not working properly, problem with JCC
+    
     # Force anaconda openjdk 
     - openjdk 8.0.152
 
