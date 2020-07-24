@@ -7,7 +7,7 @@ Package license: Apache-2.0
 
 Feedstock license: BSD-3-Clause
 
-Summary: An accurate and efficient core layer for space flight dynamics applications
+Summary: An accurate and efficient core layer for space flight dynamics applications 
 
 Orekit aims at providing accurate and efficient low level components for the development of flight dynamics applications. It is designed to be easily used in very different contexts, from quick studies up to critical operations. As a library, Orekit provides basic elements (orbits, dates, attitude, frames, ...) and various algorithms to handle them (conversions, propagations, pointing, ....).
 The Orekit library is written in java. This package provides a python wrapper to that library.
