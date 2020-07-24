@@ -32,9 +32,8 @@ requirements:
   host:
     - python
     - setuptools
-    - jcc =3.6  # [win] Need to solve why later versions not working properly, problem with JCC
-    - jcc  # [not win]
-
+    - jcc =3.6  # Need to solve why later versions not working properly, problem with JCC
+    
     # Force anaconda openjdk 
     - openjdk 8.0.152
 
