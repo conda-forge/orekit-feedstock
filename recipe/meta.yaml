@@ -18,7 +18,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 3
 
   rpaths:
     - lib/
@@ -33,14 +33,11 @@ requirements:
     - python
     - setuptools
     - jcc =3.6  # Need to solve why later versions not working properly, problem with JCC
-    
-    # Force anaconda openjdk 
-    - openjdk 8.0.152
+    - openjdk
 
   run:
     - python
-    # Force anaconda openjdk
-    - openjdk 8.0.152
+    - openjdk
 
 test:
   imports:
