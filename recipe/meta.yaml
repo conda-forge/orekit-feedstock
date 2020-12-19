@@ -32,7 +32,7 @@ requirements:
   host:
     - python
     - setuptools
-    - jcc =3.6  # Need to solve why later versions not working properly, problem with JCC
+    - jcc
     - openjdk
 
   run:
