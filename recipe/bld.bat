@@ -1,6 +1,6 @@
 :: adding compile parameters explicitly as relocation for conda does not seem to detect JCC  path under windows
 @set "JCC_JDK=%PREFIX%\Library"
-@set "JCC_INCLUDES=%PREFIX%\Library\include;%PREFIX%\Library\include\win32"
+@set "JCC_INCLUDES=%PREFIX%\Library\include\win32;%PREFIX%\Library\include"
 @set "JCC_CFLAGS=/EHsc;/D_CRT_SECURE_NO_WARNINGS"
 @set "JCC_LFLAGS=/DLL;/LIBPATH:%PREFIX%\Library\lib;Ws2_32.lib;jvm.lib"
 @set "JCC_DEBUG_CFLAGS=/Od;/DDEBUG"
