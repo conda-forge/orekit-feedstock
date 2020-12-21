@@ -1,8 +1,8 @@
 {% set name = "orekit" %}
-{% set version = "10.2" %}
-{% set artifact_filename = "v10_2_4" %}
-{% set sha256 = "2fa84da7e74e69f2596cffa11173b5477dc199cf13791930beb9d8e4ab85b63c" %}  # [not osx]  zip file
-{% set sha256 = "38336ec7417d969f8eec42c2401b32e7d54c7a0a075b31afdd00bfbf580a5cde" %}  # [osx]  tar.gz file
+{% set version = "10.3" %}
+{% set artifact_filename = "v10_3_2" %}
+{% set sha256 = "b6a3e39d2de298c10b927e3908f74ef90e6e1240f4997087443a96e585ffef87" %}  # [not osx]  zip file
+{% set sha256 = "7fdcac8de55f479dd84fb5b0dfa1da04631af2fea6424367cde90d56191e4fdf" %}  # [osx]  tar.gz file
 
 
 package:
@@ -18,7 +18,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 1
 
   rpaths:
     - lib/
@@ -29,18 +29,17 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - openjdk 8
+
   host:
     - python
     - setuptools
-    - jcc =3.6  # Need to solve why later versions not working properly, problem with JCC
-    
-    # Force anaconda openjdk 
-    - openjdk 8.0.152
+    - jcc
+    - openjdk 8
 
   run:
     - python
-    # Force anaconda openjdk
-    - openjdk 8.0.152
+    - openjdk 8
 
 test:
   imports:
