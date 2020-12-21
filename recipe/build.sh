@@ -40,7 +40,6 @@ $PYTHON -m jcc \
 --jar $SRC_DIR/hipparchus-migration-1.8.jar \
 --jar $SRC_DIR/hipparchus-ode-1.8.jar \
 --jar $SRC_DIR/hipparchus-optim-1.8.jar \
---jar $SRC_DIR/hipparchus-samples-1.8.jar \
 --jar $SRC_DIR/hipparchus-stat-1.8.jar \
 --jar $SRC_DIR/rugged-2.2.jar \
 --package java.io \
