@@ -34,7 +34,7 @@ requirements:
   host:
     - python
     - setuptools
-    - jcc
+    - jcc 3.8
     - openjdk 8
 
   run:
