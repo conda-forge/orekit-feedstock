@@ -1,8 +1,8 @@
 {% set name = "orekit" %}
-{% set version = "10.3" %}
-{% set artifact_filename = "v10_3_2" %}
-{% set sha256 = "b6a3e39d2de298c10b927e3908f74ef90e6e1240f4997087443a96e585ffef87" %}  # [not osx]  zip file
-{% set sha256 = "7fdcac8de55f479dd84fb5b0dfa1da04631af2fea6424367cde90d56191e4fdf" %}  # [osx]  tar.gz file
+{% set version = "10.3.1" %}
+{% set artifact_filename = "v10_3_1_0" %}
+{% set sha256 = "9044ea7bc02e2ead2f2470dff4902f3a5f158adc7d389231313758bd8ee11f05" %}  # [not osx]  zip file
+{% set sha256 = "bb1c7870f5177340f1417004f4f9224d7b6fd3f6f992f06764c518606ce2b310" %}  # [osx]  tar.gz file
 
 
 package:
@@ -18,7 +18,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3
+  number: 0
 
   rpaths:
     - lib/
