@@ -30,7 +30,7 @@ $PYTHON -m jcc \
 --use_full_names \
 --python orekit \
 --version ${PKG_VERSION} \
---jar $SRC_DIR/orekit-10.3.jar \
+--jar $SRC_DIR/orekit-10.3.1.jar \
 --jar $SRC_DIR/hipparchus-clustering-1.8.jar \
 --jar $SRC_DIR/hipparchus-core-1.8.jar \
 --jar $SRC_DIR/hipparchus-fft-1.8.jar \
