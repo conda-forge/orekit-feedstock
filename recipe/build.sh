@@ -8,7 +8,7 @@ then
   export JCC_LFLAGS="-v;-L${PREFIX}/jre/lib;-ljava;-L${PREFIX}/jre/lib/server;-ljvm;-Wl,-rpath;-Wl,${PREFIX}/jre/lib;-Wl,-rpath;-Wl,${PREFIX}/jre/lib/server;-mmacosx-version-min=$MACOSX_DEPLOYMENT_TARGET"
 	export JCC_CFLAGS="-fno-strict-aliasing;-Wno-write-strings;-Qunused-arguments;-mmacosx-version-min=10.9;-std=c++11;-stdlib=libc++"
   export JCC_DEBUG_CFLAGS="-O0;-g;-DDEBUG"
-  export JCC_JAVAC="javac;-source;1.8;-target;1.8"
+  export JCC_JAVAC="javac;-source;2.0;-target;2.0"
   export JCC_JAVADOC="javadoc"
 
 else
@@ -31,16 +31,16 @@ $PYTHON -m jcc \
 --python orekit \
 --version ${PKG_VERSION} \
 --jar $SRC_DIR/orekit-10.3.1.jar \
---jar $SRC_DIR/hipparchus-clustering-1.8.jar \
---jar $SRC_DIR/hipparchus-core-1.8.jar \
---jar $SRC_DIR/hipparchus-fft-1.8.jar \
---jar $SRC_DIR/hipparchus-filtering-1.8.jar \
---jar $SRC_DIR/hipparchus-fitting-1.8.jar \
---jar $SRC_DIR/hipparchus-geometry-1.8.jar \
---jar $SRC_DIR/hipparchus-migration-1.8.jar \
---jar $SRC_DIR/hipparchus-ode-1.8.jar \
---jar $SRC_DIR/hipparchus-optim-1.8.jar \
---jar $SRC_DIR/hipparchus-stat-1.8.jar \
+--jar $SRC_DIR/hipparchus-clustering-2.0.jar \
+--jar $SRC_DIR/hipparchus-core-2.0.jar \
+--jar $SRC_DIR/hipparchus-fft-2.0.jar \
+--jar $SRC_DIR/hipparchus-filtering-2.0.jar \
+--jar $SRC_DIR/hipparchus-fitting-2.0.jar \
+--jar $SRC_DIR/hipparchus-geometry-2.0.jar \
+--jar $SRC_DIR/hipparchus-migration-2.0.jar \
+--jar $SRC_DIR/hipparchus-ode-2.0.jar \
+--jar $SRC_DIR/hipparchus-optim-2.0.jar \
+--jar $SRC_DIR/hipparchus-stat-2.0.jar \
 --jar $SRC_DIR/rugged-2.2.jar \
 --package java.io \
 --package java.util \
