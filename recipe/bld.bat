@@ -11,14 +11,13 @@
 --use_full_names ^
 --python orekit ^
 --version %PKG_VERSION% ^
---jar %SRC_DIR%\orekit-11.jar ^
+--jar %SRC_DIR%\orekit-11.0.jar ^
 --jar %SRC_DIR%\hipparchus-core-2.0.jar ^
 --jar %SRC_DIR%\hipparchus-filtering-2.0.jar ^
 --jar %SRC_DIR%\hipparchus-geometry-2.0.jar ^
 --jar %SRC_DIR%\hipparchus-ode-2.0.jar ^
 --jar %SRC_DIR%\hipparchus-optim-2.0.jar ^
 --jar %SRC_DIR%\hipparchus-stat-2.0.jar ^
---jar %SRC_DIR%\rugged-2.2.jar ^
 --package java.io ^
 --package java.util ^
 --package java.text ^
