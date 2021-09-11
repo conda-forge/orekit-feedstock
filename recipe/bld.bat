@@ -66,6 +66,8 @@ java.util.function.DoubleConsumer ^
 --reserved max ^
 --reserved mean ^
 --reserved SNAN ^
+--reserved PASCAL ^
+--reserved PERCENT ^
 --classpath %PREFIX%\Library\lib\tools.jar ^
 --files 81 ^
 --build ^
