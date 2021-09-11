@@ -10,12 +10,19 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ artifact_filename }}.zip  # [not osx]
-  url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.zip  # [not osx]
+  #fn: {{ artifact_filename }}.zip  # [not osx]
+  #url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.zip  # [not osx]
 
-  fn: {{ artifact_filename }}.tar.gz  # [osx]
-  url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.tar.gz  # [osx]
-  sha256: {{ sha256 }}
+  #fn: {{ artifact_filename }}.tar.gz  # [osx]
+  #url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.tar.gz  # [osx]
+  #sha256: {{ sha256 }}
+
+  #path: ../../orekit_python_artifacts
+
+  fn: version-11.0.zip
+  url: https://github.com/petrushy/orekit_python_artifacts/archive/refs/heads/version-11.0.zip
+
+
 
 build:
   number: 0
