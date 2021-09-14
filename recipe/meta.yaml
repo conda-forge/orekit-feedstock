@@ -9,7 +9,8 @@ package:
 
 source:
   fn: {{ artifact_filename }}.zip
-  url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.zip  # [not osx]
+  url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.zip
+  sha256: {{ sha256 }}
 
 build:
   number: 0
