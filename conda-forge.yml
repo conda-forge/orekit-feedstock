@@ -2,3 +2,9 @@ provider:
   win: azure
 conda_forge_output_validation: true
 channel_priority: flexible
+
+azure:
+
+  # toggle for storing the conda build_artifacts directory (including the
+  # built packages) as an Azure pipeline artifact that can be downloaded
+  store_build_artifacts: True
