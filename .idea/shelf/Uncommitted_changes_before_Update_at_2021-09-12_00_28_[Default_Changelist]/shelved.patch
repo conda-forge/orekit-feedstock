@@ -1,0 +1,31 @@
+Index: recipe/meta.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{% set name = \"orekit\" %}\n{% set version = \"11.0\" %}\n{% set artifact_filename = \"v10_3_1_0\" %}\n{% set sha256 = \"9044ea7bc02e2ead2f2470dff4902f3a5f158adc7d389231313758bd8ee11f05\" %}  # [not osx]  zip file\n{% set sha256 = \"bb1c7870f5177340f1417004f4f9224d7b6fd3f6f992f06764c518606ce2b310\" %}  # [osx]  tar.gz file\n\n\npackage:\n  name: {{ name|lower }}\n  version: {{ version }}\n\nsource:\n  fn: {{ artifact_filename }}.zip  # [not osx]\n  url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.zip  # [not osx]\n\n  fn: {{ artifact_filename }}.tar.gz  # [osx]\n  url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.tar.gz  # [osx]\n  sha256: {{ sha256 }}\n\nbuild:\n  number: 0\n\n  rpaths:\n    - lib/\n    - jre/lib/amd64/\n    - jre/lib/amd64/server/\n\nrequirements:\n  build:\n    - {{ compiler('c') }}\n    - {{ compiler('cxx') }}\n    - openjdk 8\n\n  host:\n    - python\n    - setuptools\n    - jcc\n    - openjdk 8\n\n  run:\n    - python\n    - openjdk 8\n\ntest:\n  imports:\n    - orekit\n\n  source_files:\n    - test/*.py\n    - test/orekit-data.zip\n    - test/resources.zip\n    - test/resources/ccsds/*.txt\n\nabout:\n  home: https://www.orekit.org/forge/projects/orekit-python-wrapper\n  license: Apache-2.0\n  license_family: Apache\n  license_file: LICENSE.txt\n  summary: 'An accurate and efficient core layer for space flight dynamics applications '\n\n  description:\n    Orekit aims at providing accurate and efficient low level components for\n    the development of flight dynamics applications. It is designed to be\n    easily used in very different contexts, from quick studies up to critical operations.\n    As a library, Orekit provides basic elements (orbits, dates, attitude, frames, ...) and\n    various algorithms to handle them (conversions, propagations, pointing, ....).\n\n    The Orekit library is written in java. This package provides a python wrapper to that library.\n\n  doc_url: https://www.orekit.org/static/apidocs/\n\nextra:\n  recipe-maintainers:\n    - petrushy\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/recipe/meta.yaml b/recipe/meta.yaml
+--- a/recipe/meta.yaml	(revision 3c9353a3320c00e9ecafb50fa2476d0ee1b3d573)
++++ b/recipe/meta.yaml	(date 1631131286613)
+@@ -10,12 +10,15 @@
+   version: {{ version }}
+ 
+ source:
+-  fn: {{ artifact_filename }}.zip  # [not osx]
+-  url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.zip  # [not osx]
++  #fn: {{ artifact_filename }}.zip  # [not osx]
++  #url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.zip  # [not osx]
+ 
+-  fn: {{ artifact_filename }}.tar.gz  # [osx]
+-  url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.tar.gz  # [osx]
+-  sha256: {{ sha256 }}
++  #fn: {{ artifact_filename }}.tar.gz  # [osx]
++  #url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.tar.gz  # [osx]
++  #sha256: {{ sha256 }}
++
++source:
++  path: ../../orekit_python_artifacts
+ 
+ build:
+   number: 0

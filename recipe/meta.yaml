@@ -1,24 +1,19 @@
 {% set name = "orekit" %}
-{% set version = "10.3.1" %}
-{% set artifact_filename = "v10_3_1_0" %}
-{% set sha256 = "9044ea7bc02e2ead2f2470dff4902f3a5f158adc7d389231313758bd8ee11f05" %}  # [not osx]  zip file
-{% set sha256 = "bb1c7870f5177340f1417004f4f9224d7b6fd3f6f992f06764c518606ce2b310" %}  # [osx]  tar.gz file
-
+{% set version = "11.0" %}
+{% set artifact_filename = "v11_0_0" %}
+{% set sha256 = "aa1ed31ef6e440abc6ccfe90c83cb8a2eb0da1e4f995f5996ad9c79f5ac0465b" %}  
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ artifact_filename }}.zip  # [not osx]
-  url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.zip  # [not osx]
-
-  fn: {{ artifact_filename }}.tar.gz  # [osx]
-  url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.tar.gz  # [osx]
+  fn: {{ artifact_filename }}.zip
+  url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.zip
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
 
   rpaths:
     - lib/

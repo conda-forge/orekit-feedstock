@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:orekit-feedstock-MAIN" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fe726875-ba57-4feb-af74-3a2c077e5ca1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="9.3" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="ProjectId" id="1SK5rTIdaJSKJubHjVY6BPP5WZi" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\phy\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fe726875-ba57-4feb-af74-3a2c077e5ca1" name="Default Changelist" comment="" />
+      <created>1571299645477</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571299645477</updated>
+    </task>
+    <task id="LOCAL−00001" summary="Triggering rebuild">
+      <created>1571300259124</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1571300259124</updated>
+    </task>
+    <task id="LOCAL−00002" summary="Updates for orekit 10.1">
+      <created>1581198929552</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1581198929553</updated>
+    </task>
+    <task id="LOCAL−00003" summary="Updates for orekit 10.1">
+      <created>1581199163467</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1581199163467</updated>
+    </task>
+    <task id="LOCAL−00004" summary="Updated checksums">
+      <created>1581199478027</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1581199478027</updated>
+    </task>
+    <task id="LOCAL−00005" summary="Updated checksums">
+      <created>1581199967192</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1581199967192</updated>
+    </task>
+    <task id="LOCAL−00006" summary="Right path(?) for windows tools.jar">
+      <created>1581277034555</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1581277034555</updated>
+    </task>
+    <task id="LOCAL−00007" summary="Updates in tests">
+      <created>1581279326778</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1581279326778</updated>
+    </task>
+    <task id="LOCAL−00008" summary="Updated link and checksum">
+      <created>1581279614427</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1581279614428</updated>
+    </task>
+    <task id="LOCAL−00009" summary="Release version of orekit-10.1 jar">
+      <created>1581404584051</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1581404584052</updated>
+    </task>
+    <task id="LOCAL−00010" summary="Release version (RC4) of orekit-10.1 jar">
+      <created>1582045244155</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1582045244155</updated>
+    </task>
+    <task id="LOCAL−00011" summary="Merges of dev script">
+      <created>1593609382631</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1593609382631</updated>
+    </task>
+    <task id="LOCAL−00012" summary="include ccsds test files">
+      <created>1593713299714</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1593713299714</updated>
+    </task>
+    <task id="LOCAL−00013" summary="Remote build">
+      <created>1593718550419</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1593718550419</updated>
+    </task>
+    <task id="LOCAL−00014" summary="Proper filter syntax">
+      <created>1593718781877</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1593718781877</updated>
+    </task>
+    <task id="LOCAL−00015" summary="Should be lower case sha...">
+      <created>1593726270538</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1593726270538</updated>
+    </task>
+    <task id="LOCAL−00016" summary="Force JCC 3.6 (incl patches).">
+      <created>1593726685997</created>
+      <option name="number" value="LOCAL−00016" />
+      <option name="presentableId" value="LOCAL−00016" />
+      <updated>1593726685997</updated>
+    </task>
+    <task id="LOCAL−00017" summary="Trial and error">
+      <created>1608458432918</created>
+      <option name="number" value="LOCAL−00017" />
+      <option name="presentableId" value="LOCAL−00017" />
+      <updated>1608458432918</updated>
+    </task>
+    <task id="LOCAL−00018" summary="Trigger rebuild">
+      <created>1608575033933</created>
+      <option name="number" value="LOCAL−00018" />
+      <option name="presentableId" value="LOCAL−00018" />
+      <updated>1608575033933</updated>
+    </task>
+    <task id="LOCAL−00019" summary="Trigger rebuild">
+      <created>1608575906410</created>
+      <option name="number" value="LOCAL−00019" />
+      <option name="presentableId" value="LOCAL−00019" />
+      <updated>1608575906410</updated>
+    </task>
+    <task id="LOCAL−00020" summary="Pinning JCC">
+      <created>1608576691529</created>
+      <option name="number" value="LOCAL−00020" />
+      <option name="presentableId" value="LOCAL−00020" />
+      <updated>1608576691529</updated>
+    </task>
+    <task id="LOCAL−00021" summary="Removed pinning as build nr not working that way apparently.">
+      <created>1608577250471</created>
+      <option name="number" value="LOCAL−00021" />
+      <option name="presentableId" value="LOCAL−00021" />
+      <updated>1608577250471</updated>
+    </task>
+    <task id="LOCAL−00022" summary="removed non needed libs">
+      <created>1631131597369</created>
+      <option name="number" value="LOCAL−00022" />
+      <option name="presentableId" value="LOCAL−00022" />
+      <updated>1631131597369</updated>
+    </task>
+    <task id="LOCAL−00023" summary="v11">
+      <created>1631133892888</created>
+      <option name="number" value="LOCAL−00023" />
+      <option name="presentableId" value="LOCAL−00023" />
+      <updated>1631133892888</updated>
+    </task>
+    <task id="LOCAL−00024" summary="testing some reserved new words..">
+      <created>1631400755043</created>
+      <option name="number" value="LOCAL−00024" />
+      <option name="presentableId" value="LOCAL−00024" />
+      <updated>1631400755043</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Triggering rebuild" />
+    <MESSAGE value="Updates for orekit 10.1" />
+    <MESSAGE value="Updated checksums" />
+    <MESSAGE value="Right path(?) for windows tools.jar" />
+    <MESSAGE value="Updates in tests" />
+    <MESSAGE value="Updated link and checksum" />
+    <MESSAGE value="Release version of orekit-10.1 jar" />
+    <MESSAGE value="Release version (RC4) of orekit-10.1 jar" />
+    <MESSAGE value="Merges of dev script" />
+    <MESSAGE value="include ccsds test files" />
+    <MESSAGE value="Remote build" />
+    <MESSAGE value="Proper filter syntax" />
+    <MESSAGE value="Should be lower case sha..." />
+    <MESSAGE value="Force JCC 3.6 (incl patches)." />
+    <MESSAGE value="Trial and error" />
+    <MESSAGE value="Trigger rebuild" />
+    <MESSAGE value="Pinning JCC" />
+    <MESSAGE value="Removed pinning as build nr not working that way apparently." />
+    <MESSAGE value="removed non needed libs" />
+    <MESSAGE value="v11" />
+    <MESSAGE value="testing some reserved new words.." />
+    <option name="LAST_COMMIT_MESSAGE" value="testing some reserved new words.." />
+  </component>
+</project>

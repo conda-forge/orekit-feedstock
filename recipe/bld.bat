@@ -11,18 +11,14 @@
 --use_full_names ^
 --python orekit ^
 --version %PKG_VERSION% ^
---jar %SRC_DIR%\orekit-10.3.1.jar ^
---jar %SRC_DIR%\hipparchus-clustering-1.8.jar ^
---jar %SRC_DIR%\hipparchus-core-1.8.jar ^
---jar %SRC_DIR%\hipparchus-fft-1.8.jar ^
---jar %SRC_DIR%\hipparchus-filtering-1.8.jar ^
---jar %SRC_DIR%\hipparchus-fitting-1.8.jar ^
---jar %SRC_DIR%\hipparchus-geometry-1.8.jar ^
---jar %SRC_DIR%\hipparchus-migration-1.8.jar ^
---jar %SRC_DIR%\hipparchus-ode-1.8.jar ^
---jar %SRC_DIR%\hipparchus-optim-1.8.jar ^
---jar %SRC_DIR%\hipparchus-stat-1.8.jar ^
---jar %SRC_DIR%\rugged-2.2.jar ^
+--jar %SRC_DIR%\orekit-11.0.jar ^
+--jar %SRC_DIR%\hipparchus-core-2.0.jar ^
+--jar %SRC_DIR%\hipparchus-fitting-2.0.jar ^
+--jar %SRC_DIR%\hipparchus-filtering-2.0.jar ^
+--jar %SRC_DIR%\hipparchus-geometry-2.0.jar ^
+--jar %SRC_DIR%\hipparchus-ode-2.0.jar ^
+--jar %SRC_DIR%\hipparchus-optim-2.0.jar ^
+--jar %SRC_DIR%\hipparchus-stat-2.0.jar ^
 --package java.io ^
 --package java.util ^
 --package java.text ^
@@ -70,6 +66,8 @@ java.util.function.DoubleConsumer ^
 --reserved max ^
 --reserved mean ^
 --reserved SNAN ^
+--reserved PASCAL ^
+--reserved PERCENT ^
 --classpath %PREFIX%\Library\lib\tools.jar ^
 --files 81 ^
 --build ^
