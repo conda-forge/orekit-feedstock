@@ -46,6 +46,13 @@ test:
     - test/resources.zip
     - test/resources/ccsds/*.txt
 
+outputs:
+  - name: orekit.orekit-stubs
+    requirements:
+      - pip
+    script: install_stubs.bat  # [win]
+    script: install_stubs.sh  # [not win]
+
 about:
   home: https://www.orekit.org/forge/projects/orekit-python-wrapper
   license: Apache-2.0
