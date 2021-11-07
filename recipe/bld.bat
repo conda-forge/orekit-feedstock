@@ -85,3 +85,6 @@ if errorlevel 1 exit 1
 
 copy %RECIPE_DIR%\scripts\deactivate.bat %DEACTIVATE_DIR%\orekit-deactivate.bat
 if errorlevel 1 exit 1
+
+cd orekit_stubs
+pip install . -vv
