@@ -85,3 +85,7 @@ if errorlevel 1 exit 1
 
 copy %RECIPE_DIR%\scripts\deactivate.bat %DEACTIVATE_DIR%\orekit-deactivate.bat
 if errorlevel 1 exit 1
+
+cd orekit_stubs
+"%PYTHON%" setup.py install
+if errorlevel 1 exit 1
