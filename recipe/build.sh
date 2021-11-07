@@ -99,3 +99,6 @@ mkdir -p $DEACTIVATE_DIR
 
 cp $RECIPE_DIR/scripts/activate.sh $ACTIVATE_DIR/orekit-activate.sh
 cp $RECIPE_DIR/scripts/deactivate.sh $DEACTIVATE_DIR/orekit-deactivate.sh
+
+cd orekit_stubs
+$PYTHON setup.py install  
