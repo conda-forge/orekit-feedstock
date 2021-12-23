@@ -27,13 +27,13 @@ requirements:
     - openjdk 8
 
   host:
-    - python
+    - python <= 3.9.7
     - setuptools
     - jcc
     - openjdk 8
 
   run:
-    - python
+    - python <= 3.9.7
     - openjdk 8
 
 test:
