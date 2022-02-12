@@ -17,7 +17,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 8
+  number: 9
 
   rpaths:
     - lib/
@@ -32,13 +32,11 @@ requirements:
     - python
     - setuptools
     - jcc >=3.6
-    # Force anaconda openjdk 
-    - openjdk 8.0.152
+    - openjdk 8
 
   run:
     - python
-    # Force anaconda openjdk
-    - openjdk 8.0.152
+    - openjdk 8
 
 test:
   imports:
