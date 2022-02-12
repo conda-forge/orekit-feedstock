@@ -53,6 +53,9 @@ java.util.TreeSet ^
 java.util.stream.Collectors ^
 java.util.stream.Stream ^
 java.util.stream.DoubleStream ^
+java.util.function.LongConsumer ^
+java.util.function.DoubleConsumer ^
+java.util.function.IntConsumer ^
 --module %SRC_DIR%\pyhelpers.py ^
 --reserved INFINITE ^
 --reserved ERROR ^
