@@ -56,6 +56,7 @@ java.util.stream.DoubleStream ^
 java.util.function.LongConsumer ^
 java.util.function.IntConsumer ^
 java.util.function.DoubleConsumer ^
+java.util.function.Supplier ^
 --module %SRC_DIR%\pyhelpers.py ^
 --reserved INFINITE ^
 --reserved ERROR ^
@@ -68,6 +69,7 @@ java.util.function.DoubleConsumer ^
 --reserved SNAN ^
 --reserved PASCAL ^
 --reserved PERCENT ^
+--reserved get ^
 --classpath %PREFIX%\Library\lib\tools.jar ^
 --files 81 ^
 --build ^
