@@ -1,24 +1,28 @@
 :: adding compile parameters explicitly as relocation for conda does not seem to detect JCC  path under windows
-@set "JCC_INCLUDES=%JCC_JDK%\include;%JCC_JDK%\include\win32"
+@set "JCC_JDK=%PREFIX%\Library"
+@set "JCC_INCLUDES=%PREFIX%\Library\include\win32;%PREFIX%\Library\include"
 @set "JCC_CFLAGS=/EHsc;/D_CRT_SECURE_NO_WARNINGS"
-@set "JCC_LFLAGS=/DLL;/LIBPATH:%JCC_JDK%\lib;Ws2_32.lib;jvm.lib"
+@set "JCC_LFLAGS=/DLL;/LIBPATH:%PREFIX%\Library\lib;Ws2_32.lib;jvm.lib"
 @set "JCC_DEBUG_CFLAGS=/Od;/DDEBUG"
-@set "JCC_JAVAC=%JCC_JDK%\bin\javac.exe"
-@set "JCC_JAVADOC=%JCC_JDK%\bin\javadoc.exe"
+@set "JCC_JAVAC=%PREFIX%\Library\bin\javac.exe"
+@set "JCC_JAVADOC=%PREFIX%\Library\bin\javadoc.exe"
 
 "%PYTHON%" -m jcc  ^
 --use_full_names ^
 --python orekit ^
 --version %PKG_VERSION% ^
---jar %SRC_DIR%\orekit-10.0.jar ^
---jar %SRC_DIR%\hipparchus-core-1.5.jar ^
---jar %SRC_DIR%\hipparchus-filtering-1.5.jar ^
---jar %SRC_DIR%\hipparchus-fitting-1.5.jar ^
---jar %SRC_DIR%\hipparchus-geometry-1.5.jar ^
---jar %SRC_DIR%\hipparchus-ode-1.5.jar ^
---jar %SRC_DIR%\hipparchus-optim-1.5.jar ^
---jar %SRC_DIR%\hipparchus-stat-1.5.jar ^
---jar %SRC_DIR%\rugged-2.1.jar ^
+--jar %SRC_DIR%\orekit-10.3.1.jar ^
+--jar %SRC_DIR%\hipparchus-clustering-1.8.jar ^
+--jar %SRC_DIR%\hipparchus-core-1.8.jar ^
+--jar %SRC_DIR%\hipparchus-fft-1.8.jar ^
+--jar %SRC_DIR%\hipparchus-filtering-1.8.jar ^
+--jar %SRC_DIR%\hipparchus-fitting-1.8.jar ^
+--jar %SRC_DIR%\hipparchus-geometry-1.8.jar ^
+--jar %SRC_DIR%\hipparchus-migration-1.8.jar ^
+--jar %SRC_DIR%\hipparchus-ode-1.8.jar ^
+--jar %SRC_DIR%\hipparchus-optim-1.8.jar ^
+--jar %SRC_DIR%\hipparchus-stat-1.8.jar ^
+--jar %SRC_DIR%\rugged-2.2.jar ^
 --package java.io ^
 --package java.util ^
 --package java.text ^
@@ -54,8 +58,8 @@ java.util.stream.Collectors ^
 java.util.stream.Stream ^
 java.util.stream.DoubleStream ^
 java.util.function.LongConsumer ^
-java.util.function.DoubleConsumer ^
 java.util.function.IntConsumer ^
+java.util.function.DoubleConsumer ^
 --module %SRC_DIR%\pyhelpers.py ^
 --reserved INFINITE ^
 --reserved ERROR ^
@@ -66,6 +70,7 @@ java.util.function.IntConsumer ^
 --reserved max ^
 --reserved mean ^
 --reserved SNAN ^
+--classpath %PREFIX%\Library\lib\tools.jar ^
 --files 81 ^
 --build ^
 --install

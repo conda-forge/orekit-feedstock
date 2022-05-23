@@ -1,8 +1,8 @@
 {% set name = "orekit" %}
-{% set version = "10.0" %}
-{% set artifact_filename = "v10_0_4" %}
-{% set sha256 = "d2ac8c4d8613e89821afb562e77d7c18518d0201e1b3d7e06839d98f873bb7ba" %}  # [not osx]
-{% set sha256 = "b217a078823125d187f07d8b422c6e4d5d2a7f042ea40f875ad2a87c3f8672b3" %}  # [osx]
+{% set version = "10.3.1" %}
+{% set artifact_filename = "v10_3_1_0" %}
+{% set sha256 = "9044ea7bc02e2ead2f2470dff4902f3a5f158adc7d389231313758bd8ee11f05" %}  # [not osx]  zip file
+{% set sha256 = "bb1c7870f5177340f1417004f4f9224d7b6fd3f6f992f06764c518606ce2b310" %}  # [osx]  tar.gz file
 
 
 package:
@@ -12,12 +12,13 @@ package:
 source:
   fn: {{ artifact_filename }}.zip  # [not osx]
   url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.zip  # [not osx]
+
   fn: {{ artifact_filename }}.tar.gz  # [osx]
   url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.tar.gz  # [osx]
   sha256: {{ sha256 }}
 
 build:
-  number: 9
+  number: 1
 
   rpaths:
     - lib/
@@ -29,7 +30,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - openjdk 8
-    
+
   host:
     - python
     - setuptools
@@ -48,13 +49,14 @@ test:
     - test/*.py
     - test/orekit-data.zip
     - test/resources.zip
+    - test/resources/ccsds/*.txt
 
 about:
   home: https://www.orekit.org/forge/projects/orekit-python-wrapper
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE.txt
-  summary: 'An accurate and efficient core layer for space flight dynamics applications'
+  summary: 'An accurate and efficient core layer for space flight dynamics applications '
 
   description:
     Orekit aims at providing accurate and efficient low level components for

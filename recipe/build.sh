@@ -1,18 +1,47 @@
 #!/bin/bash
 
+if [ "$(uname)" == "Darwin" ]
+then
+  export JCC_JDK=${PREFIX}
+  export JCC_ARGSEP=";"
+  export JCC_INCLUDES="${PREFIX}/include;${PREFIX}/include/darwin"
+  export JCC_LFLAGS="-v;-L${PREFIX}/jre/lib;-ljava;-L${PREFIX}/jre/lib/server;-ljvm;-Wl,-rpath;-Wl,${PREFIX}/jre/lib;-Wl,-rpath;-Wl,${PREFIX}/jre/lib/server;-mmacosx-version-min=$MACOSX_DEPLOYMENT_TARGET"
+	export JCC_CFLAGS="-fno-strict-aliasing;-Wno-write-strings;-Qunused-arguments;-mmacosx-version-min=10.9;-std=c++11;-stdlib=libc++"
+  export JCC_DEBUG_CFLAGS="-O0;-g;-DDEBUG"
+  export JCC_JAVAC="javac;-source;1.8;-target;1.8"
+  export JCC_JAVADOC="javadoc"
+
+else
+  # GNU/Linux recipe
+  export JCC_JDK=${PREFIX}
+  export JCC_ARGSEP=";"
+	export JCC_LFLAGS="-v;-Wl,-v;-L${PREFIX}/jre/lib/amd64;-ljava;-L${PREFIX}/jre/lib/amd64/server;-ljvm;-lverify;-Wl,-rpath=${PREFIX}/jre/lib/amd64:${PREFIX}/jre/lib/amd64/server"
+  export JCC_INCLUDES="${PREFIX}/include;${PREFIX}/include/linux"
+	export JCC_JAVAC=${PREFIX}/bin/javac
+	export JCC_CFLAGS="-v;-fno-strict-aliasing;-Wno-write-strings;-D__STDC_FORMAT_MACROS"
+  export JCC_DEBUG_CFLAGS="-O0;-g;-DDEBUG"
+  export JCC_JAVADOC="javadoc"
+fi
+
+printenv
+
+
 $PYTHON -m jcc \
 --use_full_names \
 --python orekit \
 --version ${PKG_VERSION} \
---jar $SRC_DIR/orekit-10.0.jar \
---jar $SRC_DIR/hipparchus-core-1.5.jar \
---jar $SRC_DIR/hipparchus-filtering-1.5.jar \
---jar $SRC_DIR/hipparchus-fitting-1.5.jar \
---jar $SRC_DIR/hipparchus-geometry-1.5.jar \
---jar $SRC_DIR/hipparchus-ode-1.5.jar \
---jar $SRC_DIR/hipparchus-optim-1.5.jar \
---jar $SRC_DIR/hipparchus-stat-1.5.jar \
---jar $SRC_DIR/rugged-2.1.jar \
+--jar $SRC_DIR/orekit-10.3.1.jar \
+--jar $SRC_DIR/hipparchus-clustering-1.8.jar \
+--jar $SRC_DIR/hipparchus-core-1.8.jar \
+--jar $SRC_DIR/hipparchus-fft-1.8.jar \
+--jar $SRC_DIR/hipparchus-filtering-1.8.jar \
+--jar $SRC_DIR/hipparchus-fitting-1.8.jar \
+--jar $SRC_DIR/hipparchus-geometry-1.8.jar \
+--jar $SRC_DIR/hipparchus-migration-1.8.jar \
+--jar $SRC_DIR/hipparchus-ode-1.8.jar \
+--jar $SRC_DIR/hipparchus-optim-1.8.jar \
+--jar $SRC_DIR/hipparchus-stat-1.8.jar \
+--jar $SRC_DIR/rugged-2.2.jar \
 --package java.io \
 --package java.util \
 --package java.text \
@@ -48,8 +77,8 @@ java.util.stream.Collectors \
 java.util.stream.Stream \
 java.util.stream.DoubleStream \
 java.util.function.LongConsumer \
-java.util.function.DoubleConsumer \
 java.util.function.IntConsumer \
+java.util.function.DoubleConsumer \
 --module $SRC_DIR/pyhelpers.py \
 --reserved INFINITE \
 --reserved ERROR \
@@ -60,6 +89,7 @@ java.util.function.IntConsumer \
 --reserved max \
 --reserved mean \
 --reserved SNAN \
+--classpath $PREFIX/lib/tools.jar \
 --files 81 \
 --build \
 --install
