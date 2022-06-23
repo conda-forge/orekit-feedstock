@@ -30,7 +30,7 @@ $PYTHON -m jcc \
 --use_full_names \
 --python orekit \
 --version ${PKG_VERSION} \
---jar $SRC_DIR/orekit-11.1.2.jar \
+--jar $SRC_DIR/orekit-11.2.jar \
 --jar $SRC_DIR/hipparchus-core-2.1.jar \
 --jar $SRC_DIR/hipparchus-fitting-2.1.jar \
 --jar $SRC_DIR/hipparchus-filtering-2.1.jar \
