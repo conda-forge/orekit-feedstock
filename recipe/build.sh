@@ -38,6 +38,7 @@ $PYTHON -m jcc \
 --jar $SRC_DIR/hipparchus-ode-2.1.jar \
 --jar $SRC_DIR/hipparchus-optim-2.1.jar \
 --jar $SRC_DIR/hipparchus-stat-2.1.jar \
+--jar $SRC_DIR/rugged-3.0 \
 --package java.io \
 --package java.util \
 --package java.text \
