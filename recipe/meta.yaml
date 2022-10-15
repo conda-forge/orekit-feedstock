@@ -24,7 +24,7 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - jcc >=3.12
+    - jcc=3.12=*_0.*
     - openjdk 8.*
 
   host:
