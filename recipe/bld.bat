@@ -72,6 +72,7 @@ java.util.function.Supplier ^
 --reserved PASCAL ^
 --reserved PERCENT ^
 --reserved get ^
+--exclude --exclude org.hipparchus.util.RosenNumberPartitionIterator ^
 --classpath %PREFIX%\Library\lib\tools.jar ^
 --files 81 ^
 --build ^

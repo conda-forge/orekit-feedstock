@@ -88,6 +88,7 @@ java.util.function.Supplier \
 --reserved mean \
 --reserved SNAN \
 --reserved get \
+--exclude org.hipparchus.util.RosenNumberPartitionIterator \
 --classpath $PREFIX/lib/tools.jar \
 --files 81 \
 --build \
