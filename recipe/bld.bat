@@ -12,14 +12,15 @@
 --python orekit ^
 --version %PKG_VERSION% ^
 --find-jvm-dll server ^
---jar %SRC_DIR%\orekit-11.2.jar ^
---jar %SRC_DIR%\hipparchus-core-2.1.jar ^
---jar %SRC_DIR%\hipparchus-fitting-2.1.jar ^
---jar %SRC_DIR%\hipparchus-filtering-2.1.jar ^
---jar %SRC_DIR%\hipparchus-geometry-2.1.jar ^
---jar %SRC_DIR%\hipparchus-ode-2.1.jar ^
---jar %SRC_DIR%\hipparchus-optim-2.1.jar ^
---jar %SRC_DIR%\hipparchus-stat-2.1.jar ^
+--jar %SRC_DIR%\orekit-%PKG_VERSION%.jar ^
+--jar %SRC_DIR%\hipparchus-core-2.3.jar ^
+--jar %SRC_DIR%\hipparchus-fitting-2.3.jar ^
+--jar %SRC_DIR%\hipparchus-filtering-2.3.jar ^
+--jar %SRC_DIR%\hipparchus-geometry-2.3.jar ^
+--jar %SRC_DIR%\hipparchus-ode-2.3.jar ^
+--jar %SRC_DIR%\hipparchus-optim-2.3.jar ^
+--jar %SRC_DIR%\hipparchus-stat-2.3.jar ^
+--jar %SRC_DIR%\rugged-3.0.jar ^
 --package java.io ^
 --package java.util ^
 --package java.text ^
@@ -71,6 +72,7 @@ java.util.function.Supplier ^
 --reserved PASCAL ^
 --reserved PERCENT ^
 --reserved get ^
+--exclude org.hipparchus.util.RosenNumberPartitionIterator ^
 --classpath %PREFIX%\Library\lib\tools.jar ^
 --files 81 ^
 --build ^
