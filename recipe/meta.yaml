@@ -13,7 +13,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  skip: True  # [win and unix]
+  skip: True  # [win]
+  skip: True  # [unix]
 
   number: 1
 
