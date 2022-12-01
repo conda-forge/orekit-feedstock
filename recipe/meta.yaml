@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  skip: True  # [not osx]
+  skip: True  # [win and unix]
 
   number: 1
 
