@@ -1,7 +1,7 @@
 {% set name = "orekit" %}
-{% set version = "11.3" %}
-{% set artifact_filename = "v11_3_0_0" %}
-{% set sha256 = "9357c89df222116597cca5b6c67866cb6414b8ea101912bbc136e9e1d0b41749" %}
+{% set version = "11.3.1" %}
+{% set artifact_filename = "v11_3_1_0" %}
+{% set sha256 = "060e6a696b15fdffd1f057b60a3cad9961dc1d3b711626cdd18c9732e80773be" %}
 
 package:
   name: {{ name|lower }}
@@ -24,13 +24,13 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - jcc >=3.12
+    - jcc >=3.13
     - openjdk 8.*
 
   host:
     - python
     - setuptools
-    - jcc >=3.12
+    - jcc >=3.13
     - openjdk 8.*
 
   run:
