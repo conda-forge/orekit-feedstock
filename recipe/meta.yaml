@@ -1,7 +1,7 @@
 {% set name = "orekit" %}
-{% set version = "11.3" %}
-{% set artifact_filename = "v11_3_0_1" %}
-{% set sha256 = "6e7d9994b03106263cf7272f6d7fbe44a7a4652a71bcbbeb04bce1cf92451b37" %}
+{% set version = "11.3.1" %}
+{% set artifact_filename = "v11_3_1_1" %}
+{% set sha256 = "acc8302cb0f0c1e44e9e7a3c1270f52e31c958252b68a20e4bf9459291a23bb9" %}
 
 package:
   name: {{ name|lower }}
@@ -14,8 +14,7 @@ source:
 
 build:
   skip: True  # [osx]
-
-  number: 1
+  number: 0
 
   rpaths:
     - lib/
@@ -26,13 +25,13 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - jcc >=3.12
+    - jcc >=3.13
     - openjdk 8.*
 
   host:
     - python
     - setuptools
-    - jcc >=3.12
+    - jcc >=3.13
     - openjdk 8.*
 
   run:
