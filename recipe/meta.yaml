@@ -29,13 +29,13 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - jcc >=3.12
+    - jcc =3.11
     - openjdk 8.*
 
   host:
     - python
     - setuptools
-    - jcc >=3.12
+    - jcc =3.11
     - openjdk 8.*
 
   run:
