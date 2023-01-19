@@ -13,8 +13,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  preserve_egg_dir: True
-  number: 1
+  skip: True  # [osx]
+  number: 0
 
   rpaths:
     - lib/
