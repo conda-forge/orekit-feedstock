@@ -18,6 +18,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
+  skip: True  # [osx]
   number: 3
 
   rpaths:
