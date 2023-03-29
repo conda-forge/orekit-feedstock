@@ -1,11 +1,11 @@
-About orekit
-============
+About orekit-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/orekit-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.orekit.org/forge/projects/orekit-python-wrapper
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/orekit-feedstock/blob/main/LICENSE.txt)
 
 Summary: An accurate and efficient core layer for space flight dynamics applications 
 
