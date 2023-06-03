@@ -37,7 +37,7 @@ requirements:
   host:
     - python
     - setuptools
-    - jcc >=3.13
+    # - jcc >=3.13
     - openjdk 8.*
 
   run:
