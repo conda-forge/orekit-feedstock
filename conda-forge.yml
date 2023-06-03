@@ -14,5 +14,8 @@ github:
 conda_build:
   pkg_format: '2'
 
-test: native
+build_platform:
+  osx_arm64: osx_64
+
+test: native_and_emulated
 
