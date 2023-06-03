@@ -14,8 +14,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  skip: True  # [osx]
-  number: 0
+  skip: False  # [osx]
+  number: 1
 
   rpaths:
     - lib/
@@ -26,8 +26,13 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - setuptools                             # [build_platform != target_platform]
+ 
     - jcc >=3.13
     - openjdk 8.*
+    - pip
 
   host:
     - python
