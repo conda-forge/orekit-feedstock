@@ -16,7 +16,7 @@ source:
 build:
   skip: True  # [osx and py>38]
   skip: False  # [arm64]
-  number: 0
+  number: 1
 
   rpaths:
     - lib/
