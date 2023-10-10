@@ -27,6 +27,8 @@
 --package org.orekit ^
 --package org.orekit.rugged ^
 java.io.BufferedReader ^
+java.io.ByteArrayInputStream ^
+java.io.ByteArrayOutputStream ^
 java.io.FileInputStream ^
 java.io.FileOutputStream ^
 java.io.InputStream ^
