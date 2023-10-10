@@ -1,3 +1,5 @@
 *.pyc
 
 build_artifacts
+.idea/
+
