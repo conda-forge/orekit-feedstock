@@ -3,7 +3,6 @@
 {% set artifact_filename = "v11_3_3_2" %}
 {% set sha256 = "2d83bb22168d0b30629f885eb5fd3c866d8c7a613afaaaa7396eb9125b7efb91" %}
 
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
