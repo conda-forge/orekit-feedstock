@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  skip: True  # [osx and py>38]
+  skip: True   # [osx and py>38]
   skip: False  # [arm64]
   number: 2
 
