@@ -20,10 +20,6 @@ jobs:
         CONFIG: osx_arm64_python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         SHORT_CONFIG: osx_arm64_python3.11.____cpython
-      osx_arm64_python3.12.____cpython:
-        CONFIG: osx_arm64_python3.12.____cpython
-        UPLOAD_PACKAGES: 'True'
-        SHORT_CONFIG: osx_arm64_python3.12.____cpython
       osx_arm64_python3.8.____cpython:
         CONFIG: osx_arm64_python3.8.____cpython
         UPLOAD_PACKAGES: 'True'
