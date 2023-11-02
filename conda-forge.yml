@@ -1,21 +1,14 @@
-provider:
-  win: azure
-conda_forge_output_validation: true
-channel_priority: flexible
-
 azure:
-
-  # toggle for storing the conda build_artifacts directory (including the
-  # built packages) as an Azure pipeline artifact that can be downloaded
   store_build_artifacts: true
+build_platform:
+  osx_arm64: osx_64
+channel_priority: flexible
+conda_build:
+  pkg_format: '2'
+conda_forge_output_validation: true
 github:
   branch_name: main
   tooling_branch_name: main
-conda_build:
-  pkg_format: '2'
-
-build_platform:
-  osx_arm64: osx_64
-
+provider:
+  win: azure
 test: native_and_emulated
-
