@@ -15,7 +15,10 @@ source:
 build:
   skip: True   # [osx and py>38]
   # skip: False  # [arm64]
-  # skip: True   # [arm64 and py==312]
+  skip: True
+  skip: False   # [arm64 and py==312]
+  skip: False   # [osx and py>38]
+
   number: 1
 
   rpaths:
