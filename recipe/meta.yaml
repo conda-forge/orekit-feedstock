@@ -33,7 +33,6 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - setuptools                             # [build_platform != target_platform]
- 
     - jcc >=3.13
     - openjdk 8.*
     - pip
