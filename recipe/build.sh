@@ -72,6 +72,7 @@ java.util.Locale \
 java.util.Map \
 java.util.Set \
 java.util.TreeSet \
+java.util.TreeMap \
 java.util.stream.Collectors \
 java.util.stream.Stream \
 java.util.stream.DoubleStream \
