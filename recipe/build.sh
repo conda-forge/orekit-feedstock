@@ -31,6 +31,7 @@ $PYTHON -m jcc \
 --python orekit \
 --version ${PKG_VERSION} \
 --jar $SRC_DIR/orekit-${PKG_VERSION}.jar \
+--jar $SRC_DIR/orekit-${PKG_VERSION}-python-wrapper.jar \
 --jar $SRC_DIR/hipparchus-core-3.0.jar \
 --jar $SRC_DIR/hipparchus-fitting-3.0.jar \
 --jar $SRC_DIR/hipparchus-filtering-3.0.jar \
