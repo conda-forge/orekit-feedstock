@@ -1,0 +1,10 @@
+$Env:JCC_JDK = ""
+if ($Env:_JCC_JDK_CONDA_BACKUP) {
+  $Env:JCC_JDK = "$Env:_JCC_JDK_CONDA_BACKUP"
+  $Env:_JCC_JDK_CONDA_BACKUP = ""
+}
+
+if ($Env:_JCC_PATH_CONDA_BACKUP) {
+    $Env:PATH = "$Env:_JCC_PATH_CONDA_BACKUP"
+    $Env:_JCC_PATH_CONDA_BACKUP = ""
+}

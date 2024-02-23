@@ -92,7 +92,13 @@ mkdir %DEACTIVATE_DIR%
 copy %RECIPE_DIR%\scripts\activate.bat %ACTIVATE_DIR%\orekit-activate.bat
 if errorlevel 1 exit 1
 
+copy %RECIPE_DIR%\scripts\activate.ps1 %ACTIVATE_DIR%\orekit-activate.ps1
+if errorlevel 1 exit 1
+
 copy %RECIPE_DIR%\scripts\deactivate.bat %DEACTIVATE_DIR%\orekit-deactivate.bat
+if errorlevel 1 exit 1
+
+copy %RECIPE_DIR%\scripts\deactivate.ps1 %DEACTIVATE_DIR%\orekit-deactivate.ps1
 if errorlevel 1 exit 1
 
 cd orekit_stubs
