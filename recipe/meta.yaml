@@ -1,7 +1,7 @@
 {% set name = "orekit" %}
-{% set version = "12.0.1" %}
-{% set artifact_filename = "v12_0_1_3" %}
-{% set sha256 = "fcca6473cfbaa0daed60f199996e20a405ace806d18ed6ba59c5ec444fb98ed0" %}
+{% set version = "12.0.2" %}
+{% set artifact_filename = "v12_0_2_0" %}
+{% set sha256 = "433146c5655c6ef87fbb7a557b3aeaa5487fd6937c68a372efbbd0a38c29f33a" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ build:
   skip: False  # [arm64]
   skip: True   # [arm64 and py==312]
 
-  number: 4
+  number: 0
 
   rpaths:
     - lib/
@@ -31,14 +31,14 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - setuptools                             # [build_platform != target_platform]
-    - jcc >=3.13
+    - jcc >=3.14
     - openjdk 8.*
     - pip
 
   host:
     - python
     - setuptools
-    - jcc >=3.13
+    - jcc >=3.14
     - openjdk 8.*
 
   run:

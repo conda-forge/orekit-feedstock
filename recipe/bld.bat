@@ -79,9 +79,11 @@ java.util.function.Supplier ^
 --exclude org.hipparchus.util.RosenNumberPartitionIterator ^
 --classpath %PREFIX%\Library\lib\tools.jar ^
 --files 81 ^
---build ^
---install
+--generate
 if errorlevel 1 exit 1
+
+python -m build -nw
+for %%f in (dist\*.whl) do pip install "%%f" -vv --force --no-deps 
 
 :: ensure that JCC_JDK is set correctly by invoking an activate script
 set ACTIVATE_DIR=%PREFIX%\etc\conda\activate.d
@@ -102,5 +104,5 @@ copy %RECIPE_DIR%\scripts\deactivate.ps1 %DEACTIVATE_DIR%\orekit-deactivate.ps1
 if errorlevel 1 exit 1
 
 cd orekit_stubs
-"%PYTHON%" setup.py install
+"%PYTHON%" -m pip install . -vv --force --no-deps
 if errorlevel 1 exit 1

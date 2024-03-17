@@ -95,8 +95,10 @@ java.util.function.Supplier \
 --exclude org.hipparchus.util.RosenNumberPartitionIterator \
 --classpath $PREFIX/lib/tools.jar \
 --files 81 \
---build \
---install
+--generate
+
+python -m build -nw
+python -m pip install dist/*.whl -vv --force --no-deps
 
 # ensure that JCC_JDK is set correctly by invoking an activate script
 
@@ -108,5 +110,5 @@ mkdir -p $DEACTIVATE_DIR
 cp $RECIPE_DIR/scripts/activate.sh $ACTIVATE_DIR/orekit-activate.sh
 cp $RECIPE_DIR/scripts/deactivate.sh $DEACTIVATE_DIR/orekit-deactivate.sh
 
-cd orekit_stubs
-$PYTHON setup.py install  
+#cd orekit_stubs
+#$PYTHON -m pip install . -vv --force --no-deps 
