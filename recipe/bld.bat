@@ -63,6 +63,7 @@ java.util.function.LongConsumer ^
 java.util.function.IntConsumer ^
 java.util.function.DoubleConsumer ^
 java.util.function.Supplier ^
+java.util.function.Function ^
 --module %SRC_DIR%\pyhelpers.py ^
 --reserved INFINITE ^
 --reserved ERROR ^
