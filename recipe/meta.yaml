@@ -17,7 +17,7 @@ build:
   skip: False  # [arm64]
   skip: True   # [arm64 and py==312]
 
-  number: 6
+  number: 8
 
   rpaths:
     - lib/
