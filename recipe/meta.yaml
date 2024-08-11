@@ -1,7 +1,7 @@
 {% set name = "orekit" %}
-{% set version = "12.1.1" %}
-{% set artifact_filename = "v12_1_1_0" %}
-{% set sha256 = "31b4cb7e08f91834feeaac51c839ae9a1b18d470a501eaeef0ef7cf266880127" %}
+{% set version = "12.1.2" %}
+{% set artifact_filename = "v12_1_2_0" %}
+{% set sha256 = "b5462268b859471372f54a066dd3e9f37cf035c42be91babd56cfd3a0b3f5bd3" %}
 
 package:
   name: {{ name|lower }}
@@ -26,6 +26,7 @@ build:
 
 requirements:
   build:
+    - {{ stdlib("c") }}
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - python                                 # [build_platform != target_platform]
