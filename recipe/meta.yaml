@@ -1,7 +1,7 @@
 {% set name = "orekit" %}
 {% set version = "12.2" %}
-{% set artifact_filename = "v12_2_0_0" %}
-{% set sha256 = "eaf59d24f2353d0a9ce48b43b9b50e61ef5c9b74e85193bff3bb3dd1549e30cf" %}
+{% set artifact_filename = "v12_2_0_1" %}
+{% set sha256 = "4a66e40683901667533eacb5b8ce7d5e442f417b7c48b83ec7a6b0a40302ee10" %}
 
 package:
   name: {{ name|lower }}
@@ -16,7 +16,7 @@ build:
   skip: True   # [osx]
   skip: False  # [arm64]
 
-  number: 0
+  number: 1
 
   rpaths:
     - lib/
