@@ -6,7 +6,7 @@ then
   export JCC_ARGSEP=";"
   export JCC_INCLUDES="${PREFIX}/include;${PREFIX}/include/darwin"
   export JCC_LFLAGS="-v;-L${PREFIX}/jre/lib;-ljava;-L${PREFIX}/jre/lib/server;-ljvm;-Wl,-rpath;-Wl,${PREFIX}/jre/lib;-Wl,-rpath;-Wl,${PREFIX}/jre/lib/server;-mmacosx-version-min=$MACOSX_DEPLOYMENT_TARGET"
-	export JCC_CFLAGS="-fno-strict-aliasing;-Wno-write-strings;-Qunused-arguments;-mmacosx-version-min=10.9;-std=c++11;-stdlib=libc++"
+  export JCC_CFLAGS="-fno-strict-aliasing;-Wno-write-strings;-Qunused-arguments;-mmacosx-version-min=$MACOSX_DEPLOYMENT_TARGET;-std=c++11;-stdlib=libc++"
   export JCC_DEBUG_CFLAGS="-O0;-g;-DDEBUG"
   export JCC_JAVAC="javac;-source;2.0;-target;2.0"
   export JCC_JAVADOC="javadoc"
