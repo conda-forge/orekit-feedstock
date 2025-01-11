@@ -1,7 +1,7 @@
 {% set name = "orekit" %}
-{% set version = "12.2" %}
+{% set version = "12_2_0_1" %}
 {% set artifact_filename = "v12_2_0_1" %}
-{% set sha256 = "4a66e40683901667533eacb5b8ce7d5e442f417b7c48b83ec7a6b0a40302ee10" %}
+{% set sha256 = "6cdaa1bf130ce6f6c453171fd46ebd88da34d0125f4353d85f6c4f38766fcfed" %}
 
 package:
   name: {{ name|lower }}
@@ -9,14 +9,14 @@ package:
 
 source:
   fn: {{ artifact_filename }}.zip
-  url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.zip
+  url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  skip: True   # [osx]
-  skip: False  # [arm64]
+  skip: true  # [osx]
+  skip: false  # [arm64]
 
-  number: 1
+  number: 0
 
   rpaths:
     - lib/
@@ -60,18 +60,12 @@ about:
   license_file: LICENSE.txt
   summary: 'An accurate and efficient core layer for space flight dynamics applications '
 
-  description:
-    Orekit aims at providing accurate and efficient low level components for
-    the development of flight dynamics applications. It is designed to be
-    easily used in very different contexts, from quick studies up to critical operations.
-    As a library, Orekit provides basic elements (orbits, dates, attitude, frames, ...) and
-    various algorithms to handle them (conversions, propagations, pointing, ....).
-
-    The Orekit library is written in java. This package provides a python wrapper to that library.
+  description: "Orekit aims at providing accurate and efficient low level components for the development of flight dynamics applications. It is designed to be easily used in very different contexts, from quick studies up to critical operations. As a library, Orekit provides basic elements (orbits, dates, attitude, frames,
+    ...) and various algorithms to handle them (conversions, propagations, pointing, ....).\nThe Orekit library is written in java. This package provides a python wrapper to that library."
 
   doc_url: https://www.orekit.org/static/apidocs/
 
 extra:
   recipe-maintainers:
     - petrushy
- 
+
