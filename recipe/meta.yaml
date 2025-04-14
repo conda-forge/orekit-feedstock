@@ -1,6 +1,6 @@
 {% set name = "orekit" %}
-{% set version = "12.2" %}
-{% set artifact_filename = "v12_2_0_2" %}
+{% set version = "13.0" %}
+{% set artifact_filename = "v13_0_0_0" %}
 {% set sha256 = "28acc3284cd6c0be8c06084281d42c4822d250fae9d596edab65f2c18a56b0c6" %}
 
 package:
@@ -8,16 +8,17 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ artifact_filename }}.zip
-  url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.zip
-  sha256: {{ sha256 }}
+  #fn: {{ artifact_filename }}.zip
+  #url: https://github.com/petrushy/orekit_python_artifacts/archive/{{ artifact_filename }}.zip
+  #sha256: {{ sha256 }}
+  path: ../../orekit_python_artifacts
 
 build:
   skip: True   # [osx and py>38]
   skip: False  # [arm64]
   skip: True   # [arm64 and py==312]
 
-  number: 2
+  number: 0
 
   rpaths:
     - lib/
