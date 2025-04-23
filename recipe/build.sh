@@ -31,6 +31,7 @@ $PYTHON -m jcc \
 --python orekit \
 --version ${PKG_VERSION} \
 --jar $SRC_DIR/orekit-${PKG_VERSION}.jar \
+--jar $SRC_DIR/orekit-${PKG_VERSION}-python-wrapper.jar \
 --jar $SRC_DIR/hipparchus-core-4.0.1.jar \
 --jar $SRC_DIR/hipparchus-fitting-4.0.1.jar \
 --jar $SRC_DIR/hipparchus-filtering-4.0.1.jar \
@@ -38,8 +39,6 @@ $PYTHON -m jcc \
 --jar $SRC_DIR/hipparchus-ode-4.0.1.jar \
 --jar $SRC_DIR/hipparchus-optim-4.0.1.jar \
 --jar $SRC_DIR/hipparchus-stat-4.0.1.jar \
---jar $SRC_DIR/rugged-4.0-20240603.065802-2.jar \
---jar $SRC_DIR/rugged-4.0-python-wrapper.jar \
 --package java.io \
 --package java.util \
 --package java.text \

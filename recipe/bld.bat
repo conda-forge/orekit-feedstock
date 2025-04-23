@@ -21,8 +21,6 @@
 --jar %SRC_DIR%\hipparchus-ode-4.0.1.jar ^
 --jar %SRC_DIR%\hipparchus-optim-4.0.1.jar ^
 --jar %SRC_DIR%\hipparchus-stat-4.0.1.jar ^
---jar %SRC_DIR%\rugged-4.0-20240603.065802-2.jar ^
---jar %SRC_DIR%\rugged-4.0-python-wrapper.jar ^
 --package java.io ^
 --package java.util ^
 --package java.text ^
