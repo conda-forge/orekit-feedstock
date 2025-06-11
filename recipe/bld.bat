@@ -44,6 +44,7 @@ java.text.DecimalFormatSymbols ^
 java.util.ArrayDeque  ^
 java.util.ArrayList  ^
 java.util.Arrays  ^
+java.util.concurrent.TimeUnit ^
 java.util.Collection  ^
 java.util.Collections ^
 java.util.Date ^
