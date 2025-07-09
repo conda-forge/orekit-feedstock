@@ -14,11 +14,11 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  skip: True   # [osx and py>38]
-  skip: False  # [arm64]
-  skip: True   # [arm64 and py==312]
+  # skip: True   # [osx and py>38]
+  # skip: False  # [arm64]
+  # skip: True   # [arm64 and py==312]
 
-  number: 2
+  number: 3
 
   rpaths:
     - lib/
