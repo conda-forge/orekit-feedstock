@@ -1,6 +1,6 @@
 {% set name = "orekit" %}
-{% set version = "13.1" %}
-{% set artifact_filename = "v13_1_0_3" %}
+{% set version = "13.1.4" %}
+{% set artifact_filename = "v13_1_4_0" %}
 {% set sha256 = "24bfc9a46204151cca180bd4fe6092ccb47c008cceaff83ae4ee77fd101a808d" %}
 
 
@@ -14,7 +14,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3
+  number: 0
 
   rpaths:
     - lib/
