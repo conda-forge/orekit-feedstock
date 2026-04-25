@@ -6,7 +6,7 @@
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   fn: {{ artifact_filename }}.zip
@@ -14,7 +14,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 3
 
   rpaths:
     - lib/
