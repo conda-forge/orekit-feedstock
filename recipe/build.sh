@@ -25,6 +25,11 @@ fi
 
 printenv
 
+# Workaround for JCC 3.15: its initVM defaults maxstack='512k', which is rejected
+# by aarch64 JDK 8 ("specify at least 640k"). JCC main has bumped it to 2m,
+# but no release contains the fix yet. Patch the installed cpp.py in place.
+sed -i.bak "s/initvm_args\\['maxstack'\\] *= *'512k'/initvm_args['maxstack'] = '2m'/" \
+    "$SP_DIR/jcc/cpp.py"
 
 $PYTHON -m jcc \
 --use_full_names \
