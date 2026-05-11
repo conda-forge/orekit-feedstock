@@ -25,6 +25,11 @@ fi
 
 printenv
 
+# Workaround for JCC 3.15: its initVM defaults maxstack='512k', which is rejected
+# by aarch64 JDK 8 ("specify at least 640k"). JCC main has bumped it to 2m,
+# but no release contains the fix yet. Patch the installed cpp.py in place.
+sed -i.bak "s/initvm_args\\['maxstack'\\] *= *'512k'/initvm_args['maxstack'] = '2m'/" \
+    "$SP_DIR/jcc/cpp.py"
 
 $PYTHON -m jcc \
 --use_full_names \
@@ -32,15 +37,15 @@ $PYTHON -m jcc \
 --version ${PKG_VERSION} \
 --jar $SRC_DIR/orekit-${PKG_VERSION}.jar \
 --jar $SRC_DIR/orekit-${PKG_VERSION}-python-wrapper.jar \
---jar $SRC_DIR/rugged-4.0.jar \
+--jar $SRC_DIR/rugged-4.0.1.jar \
 --jar $SRC_DIR/rugged-4.0-python-wrapper.jar \
---jar $SRC_DIR/hipparchus-core-4.0.1.jar \
---jar $SRC_DIR/hipparchus-fitting-4.0.1.jar \
---jar $SRC_DIR/hipparchus-filtering-4.0.1.jar \
---jar $SRC_DIR/hipparchus-geometry-4.0.1.jar \
---jar $SRC_DIR/hipparchus-ode-4.0.1.jar \
---jar $SRC_DIR/hipparchus-optim-4.0.1.jar \
---jar $SRC_DIR/hipparchus-stat-4.0.1.jar \
+--jar $SRC_DIR/hipparchus-core-4.0.3.jar \
+--jar $SRC_DIR/hipparchus-fitting-4.0.3.jar \
+--jar $SRC_DIR/hipparchus-filtering-4.0.3.jar \
+--jar $SRC_DIR/hipparchus-geometry-4.0.3.jar \
+--jar $SRC_DIR/hipparchus-ode-4.0.3.jar \
+--jar $SRC_DIR/hipparchus-optim-4.0.3.jar \
+--jar $SRC_DIR/hipparchus-stat-4.0.3.jar \
 --package java.io \
 --package java.util \
 --package java.text \
